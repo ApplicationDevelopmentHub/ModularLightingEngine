@@ -3,8 +3,8 @@
 
 class Light {
 public:
-	~Light() = default;
-	LightType GetType() const { return type; }
+	~Light() = default; //default destructor compiler generated
+	LightType GetType() const { return type; } 
 private:
 	LightType type;
 protected:
