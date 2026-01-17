@@ -126,18 +126,29 @@
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="HighQualityShadow.h" />
+    <ClInclude Include="ILightObserver.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="LightData.h" />
     <ClInclude Include="LightFactory.h" />
     <ClInclude Include="LightingSystem.h" />
     <ClInclude Include="LightType.h" />
+    <ClInclude Include="LowQualityShadow.h" />
+    <ClInclude Include="MediumQualityShadow.h" />
+    <ClInclude Include="NoShadow.h" />
     <ClInclude Include="PointLight.h" />
+    <ClInclude Include="Shadow.h" />
+    <ClInclude Include="ShadowFactory.h" />
+    <ClInclude Include="ShadowSystem.h" />
+    <ClInclude Include="ShadowType.h" />
     <ClInclude Include="SpotLight.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="LightFactory.cpp" />
     <ClCompile Include="LightingSystem.cpp" />
+    <ClCompile Include="ShadowFactory.cpp" />
+    <ClCompile Include="ShadowSystem.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

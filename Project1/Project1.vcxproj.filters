@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Application">
       <UniqueIdentifier>{85df4115-be95-4ed2-a340-a4dd44a6acbb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{cebb6405-a2af-4997-be05-f98d4e03acb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{fb35a338-7604-4757-b66b-40334cbc1b77}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Light.h">
@@ -54,6 +60,33 @@
     <ClInclude Include="Application.h">
       <Filter>Source Files\Application</Filter>
     </ClInclude>
+    <ClInclude Include="ShadowSystem.h">
+      <Filter>Source Files\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowType.h">
+      <Filter>Source Files\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Shadow.h">
+      <Filter>Source Files\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="NoShadow.h">
+      <Filter>Source Files\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="LowQualityShadow.h">
+      <Filter>Source Files\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="MediumQualityShadow.h">
+      <Filter>Source Files\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="HighQualityShadow.h">
+      <Filter>Source Files\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowFactory.h">
+      <Filter>Source Files\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="ILightObserver.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LightFactory.cpp">
@@ -64,6 +97,12 @@
     </ClCompile>
     <ClCompile Include="Application.cpp">
       <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowSystem.cpp">
+      <Filter>Source Files\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowFactory.cpp">
+      <Filter>Source Files\Shadow</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
