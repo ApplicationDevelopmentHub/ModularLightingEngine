@@ -7,6 +7,8 @@ void ShadowSystem::OnLightAdded(const LightHandle& id) {
 	if (currentShadowQuality == ShadowType::None) return;
 
 	const Light& light = lightingSystem.GetLight(id);
+
+	//create a new shadow using the shadow factory
 }
 
 void ShadowSystem::OnLightRemoved(const LightHandle& id) {

@@ -1,6 +1,7 @@
 #pragma once
 #include"LightingSystem.h"
 #include"LightData.h"
+#include"ShadowSystem.h"
 #include<memory>
 
 //APPLICATION FACADE CONNECTS ALL SUBSYSTEMS
@@ -12,6 +13,9 @@ public:
 		return instance;
 	}
 
+	//Init Application:create objects, assign references, define subsystems
+	void Init();
+
 	//Lighting system based calls
 	LightHandle AddLight(const Lightdata& dat);
 	void RemoveLight(LightHandle id);
@@ -19,4 +23,5 @@ public:
 private:
 	~Application() = default; //default destructor compiler generated
 	std::unique_ptr<LightingSystem> lightingSystem;
+	std::unique_ptr<ShadowSystem> shadowSystem;
 };

@@ -3,9 +3,10 @@
 #include"LightingSystem.h"
 #include<unordered_map>
 #include"Shadow.h"
+#include"ILightObserver.h"
 
 //OBSERVER PATTERN: WHEN LIGHT ADDED, REMOVED, OR MODIFIED
-class ShadowSystem {
+class ShadowSystem:public ILightObserver {
 public:
 	explicit ShadowSystem(LightingSystem& sys);
 
@@ -22,6 +23,7 @@ private:
 	LightingSystem& lightingSystem;
 	struct ShadowEntry { // Holds all shadow data: object/container
 		std::unique_ptr<Shadow> shadowMode;
+		bool dirty = true;
 	};
 
 	ShadowType currentShadowQuality;
