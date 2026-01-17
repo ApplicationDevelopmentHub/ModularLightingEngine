@@ -13,6 +13,7 @@ public:
 	LightHandle AddLight(const Lightdata& dat);
 	void RemoveLight(LightHandle id);
 	const auto GetLights() const;
+	const auto GetLight(LightHandle id);
 private:
 	std::unordered_map<LightHandle, std::unique_ptr<Light>> lights; //maps id to light
 	LightHandle nextHandle{ 1 };

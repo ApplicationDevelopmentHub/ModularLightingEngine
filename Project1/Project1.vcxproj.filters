@@ -42,5 +42,28 @@
     <ClInclude Include="LightType.h">
       <Filter>Source Files\Light</Filter>
     </ClInclude>
+    <ClInclude Include="LightData.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="LightFactory.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="LightingSystem.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Source Files\Application</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LightFactory.cpp">
+      <Filter>Source Files\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="LightingSystem.cpp">
+      <Filter>Source Files\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

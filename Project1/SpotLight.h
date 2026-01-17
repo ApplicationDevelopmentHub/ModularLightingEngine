@@ -17,3 +17,4 @@ public:
 	float innerAngle;
 	float outerAngle;
 };
+

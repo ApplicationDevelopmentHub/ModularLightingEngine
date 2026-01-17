@@ -102,6 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,11 +124,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Application.h" />
     <ClInclude Include="DirectionalLight.h" />
     <ClInclude Include="Light.h" />
+    <ClInclude Include="LightData.h" />
+    <ClInclude Include="LightFactory.h" />
+    <ClInclude Include="LightingSystem.h" />
     <ClInclude Include="LightType.h" />
     <ClInclude Include="PointLight.h" />
     <ClInclude Include="SpotLight.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="LightFactory.cpp" />
+    <ClCompile Include="LightingSystem.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
