@@ -1,61 +1,15 @@
 ﻿  Application.cpp
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(9,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3630,35): error C2512: 'ShadowSystem::ShadowSystem': no appropriate default constructor available
   (compiling source file 'Application.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(9,45): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'Application.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(10,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'Application.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(10,47): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'Application.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(11,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'Application.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(11,48): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'Application.cpp')
-  
-  LightingSystem.cpp
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(9,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'LightingSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(9,45): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'LightingSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(10,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'LightingSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(10,47): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'LightingSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(11,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'LightingSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(11,48): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'LightingSystem.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3630,35):
+      while trying to match the argument list '()'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3630,35):
+      the template instantiation context (the oldest one first) is
+          C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\Application.cpp(5,22):
+          see reference to function template instantiation 'std::unique_ptr<ShadowSystem,std::default_delete<ShadowSystem>> std::make_unique<ShadowSystem,,0>(void)' being compiled
   
   ShadowFactory.cpp
   ShadowSystem.cpp
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(9,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'ShadowSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(9,45): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'ShadowSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(10,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'ShadowSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(10,47): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'ShadowSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(11,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'ShadowSystem.cpp')
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ILightObserver.h(11,48): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'ShadowSystem.cpp')
-  
 C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ShadowSystem.cpp(9,38): error C3779: 'LightingSystem::GetLight': a function that returns 'auto' cannot be used before it is defined
       C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\LightingSystem.h(19,13):
       see declaration of 'LightingSystem::GetLight'

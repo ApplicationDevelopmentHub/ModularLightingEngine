@@ -9,10 +9,13 @@ void ShadowSystem::OnLightAdded(const LightHandle& id) {
 	const Light& light = lightingSystem.GetLight(id);
 
 	//create a new shadow using the shadow factory
+	auto newShadow = ShadowFactory::CreateShadow(light.GetType(),currentShadowQuality);
 }
 
 void ShadowSystem::OnLightRemoved(const LightHandle& id) {
+	auto it = shadows.find(id);
 
+	if(it!=shadows.end()) shadows.erase(id);
 }
 
 void ShadowSystem::OnLightModified(const LightHandle& id) {

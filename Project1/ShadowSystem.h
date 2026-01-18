@@ -4,6 +4,7 @@
 #include<unordered_map>
 #include"Shadow.h"
 #include"ILightObserver.h"
+#include"ShadowFactory.h"
 
 //OBSERVER PATTERN: WHEN LIGHT ADDED, REMOVED, OR MODIFIED
 class ShadowSystem:public ILightObserver {

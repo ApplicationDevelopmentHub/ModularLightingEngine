@@ -1,5 +1,7 @@
 #pragma once
-#include"LightingSystem.h"
+#include<cstdint>
+//#include"LightingSystem.h"
+using LightHandle = uint32_t; //Light id
 
 //OBSERVER TO BE USED BY SHADOWS
 class ILightObserver {
