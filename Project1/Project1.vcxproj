@@ -126,8 +126,10 @@
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="GLFWWindow.h" />
     <ClInclude Include="HighQualityShadow.h" />
     <ClInclude Include="ILightObserver.h" />
+    <ClInclude Include="IWindow.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="LightData.h" />
     <ClInclude Include="LightFactory.h" />
@@ -142,6 +144,12 @@
     <ClInclude Include="ShadowSystem.h" />
     <ClInclude Include="ShadowType.h" />
     <ClInclude Include="SpotLight.h" />
+    <ClInclude Include="UIHierarchyPanel.h" />
+    <ClInclude Include="UIInspectorPanel.h" />
+    <ClInclude Include="UILatencyPanel.h" />
+    <ClInclude Include="UIMenuPanel.h" />
+    <ClInclude Include="UIPanel.h" />
+    <ClInclude Include="UISystem.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
