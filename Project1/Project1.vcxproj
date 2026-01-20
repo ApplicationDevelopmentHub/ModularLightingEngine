@@ -127,6 +127,7 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="DirectionalLight.h" />
     <ClInclude Include="GLFWWindow.h" />
+    <ClInclude Include="GPUMesh.h" />
     <ClInclude Include="HighQualityShadow.h" />
     <ClInclude Include="ILightObserver.h" />
     <ClInclude Include="IWindow.h" />
@@ -137,8 +138,10 @@
     <ClInclude Include="LightType.h" />
     <ClInclude Include="LowQualityShadow.h" />
     <ClInclude Include="MediumQualityShadow.h" />
+    <ClInclude Include="MeshData.h" />
     <ClInclude Include="NoShadow.h" />
     <ClInclude Include="PointLight.h" />
+    <ClInclude Include="PrimitiveFactory.h" />
     <ClInclude Include="Shadow.h" />
     <ClInclude Include="ShadowFactory.h" />
     <ClInclude Include="ShadowSystem.h" />
@@ -150,6 +153,7 @@
     <ClInclude Include="UIMenuPanel.h" />
     <ClInclude Include="UIPanel.h" />
     <ClInclude Include="UISystem.h" />
+    <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />

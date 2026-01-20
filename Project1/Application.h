@@ -15,6 +15,7 @@ public:
 
 	//Init Application:create objects, assign references, define subsystems
 	void Init();
+	void ShutDown();
 
 	//Lighting system based calls
 	LightHandle AddLight(const Lightdata& dat);

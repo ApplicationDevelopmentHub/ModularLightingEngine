@@ -3,7 +3,14 @@
 void Application::Init() {
 	lightingSystem = std::make_unique<LightingSystem>();
 	shadowSystem = std::make_unique<ShadowSystem>();
-	lightingSystem->RegisterObserver(shadowSystem.get());
+
+	//subscribe all observers
+	lightingSystem->RegisterObserver(shadowSystem.get()); //shadow subscribes to light
+}
+
+void Application::ShutDown() {
+	//unsubscribe all observers
+	lightingSystem->UnregisterObserver(shadowSystem.get());
 }
 
 LightHandle Application::AddLight(const Lightdata& dat) {
