@@ -102,11 +102,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\glfwWIN64\include;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\GLEW\include;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\GLEW\lib\Release\x64;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\glfwWIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
