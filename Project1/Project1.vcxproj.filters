@@ -19,9 +19,6 @@
     <Filter Include="Source Files\Shadow">
       <UniqueIdentifier>{37e3fb43-9a5a-41c1-baaf-3b1cd17be66c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Renderer">
-      <UniqueIdentifier>{eeaa85c3-9eee-4a7b-b400-3500d00bfbda}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Application">
       <UniqueIdentifier>{85df4115-be95-4ed2-a340-a4dd44a6acbb}</UniqueIdentifier>
     </Filter>
@@ -33,6 +30,9 @@
     </Filter>
     <Filter Include="Source Files\Window">
       <UniqueIdentifier>{19263864-c375-4dc7-af5e-b38350df45df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Primitive Factory">
+      <UniqueIdentifier>{eeaa85c3-9eee-4a7b-b400-3500d00bfbda}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -115,16 +115,16 @@
       <Filter>Source Files\UI</Filter>
     </ClInclude>
     <ClInclude Include="Vertex.h">
-      <Filter>Source Files\Renderer</Filter>
+      <Filter>Source Files\Primitive Factory</Filter>
     </ClInclude>
     <ClInclude Include="MeshData.h">
-      <Filter>Source Files\Renderer</Filter>
+      <Filter>Source Files\Primitive Factory</Filter>
     </ClInclude>
     <ClInclude Include="PrimitiveFactory.h">
-      <Filter>Source Files\Renderer</Filter>
+      <Filter>Source Files\Primitive Factory</Filter>
     </ClInclude>
     <ClInclude Include="GPUMesh.h">
-      <Filter>Source Files\Renderer</Filter>
+      <Filter>Source Files\Primitive Factory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +142,12 @@
     </ClCompile>
     <ClCompile Include="ShadowFactory.cpp">
       <Filter>Source Files\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="GLFWWindow.cpp">
+      <Filter>Source Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Application</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

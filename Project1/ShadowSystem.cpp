@@ -4,12 +4,14 @@
 ShadowSystem::ShadowSystem(LightingSystem& sys):lightingSystem(sys){}
 
 void ShadowSystem::OnLightAdded(const LightHandle& id) {
-	if (currentShadowQuality == ShadowType::None) return;
+	//RUN TIME ERROR: CIRCULAR REFERENCE
 
-	const Light& light = lightingSystem.GetLight(id);
+	//if (currentShadowQuality == ShadowType::None) return;
 
-	//create a new shadow using the shadow factory
-	auto newShadow = ShadowFactory::CreateShadow(light.GetType(),currentShadowQuality);
+	//const Light& light = lightingSystem.GetLight(id);
+
+	////create a new shadow using the shadow factory
+	//auto newShadow = ShadowFactory::CreateShadow(light.GetType(),currentShadowQuality);
 }
 
 void ShadowSystem::OnLightRemoved(const LightHandle& id) {

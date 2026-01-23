@@ -9,5 +9,5 @@
 
 class ShadowFactory {
 public:
-	static std::unique_ptr<Shadow> CreateShadow(LightType light,ShadowType shadow); //maps shadow to light
+	//static std::unique_ptr<Shadow> CreateShadow(LightType light,ShadowType shadow); //maps shadow to light
 };

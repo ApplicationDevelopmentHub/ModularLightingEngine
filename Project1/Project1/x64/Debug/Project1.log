@@ -1,18 +1,4 @@
 ﻿  Application.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3630,35): error C2512: 'ShadowSystem::ShadowSystem': no appropriate default constructor available
-  (compiling source file 'Application.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3630,35):
-      while trying to match the argument list '()'
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3630,35):
-      the template instantiation context (the oldest one first) is
-          C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\Application.cpp(5,22):
-          see reference to function template instantiation 'std::unique_ptr<ShadowSystem,std::default_delete<ShadowSystem>> std::make_unique<ShadowSystem,,0>(void)' being compiled
-  
-  ShadowFactory.cpp
-  ShadowSystem.cpp
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ShadowSystem.cpp(9,38): error C3779: 'LightingSystem::GetLight': a function that returns 'auto' cannot be used before it is defined
-      C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\LightingSystem.h(19,13):
-      see declaration of 'LightingSystem::GetLight'
-  
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\ShadowSystem.cpp(9,21): error C2530: 'light': references must be initialized
+  GLFWWindow.cpp
   Generating Code...
+  Project1.vcxproj -> C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\x64\Debug\Project1.exe

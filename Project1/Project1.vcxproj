@@ -159,8 +159,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="GLFWWindow.cpp" />
     <ClCompile Include="LightFactory.cpp" />
     <ClCompile Include="LightingSystem.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="ShadowFactory.cpp" />
     <ClCompile Include="ShadowSystem.cpp" />
   </ItemGroup>

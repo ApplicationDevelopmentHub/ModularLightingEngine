@@ -2,6 +2,8 @@
 #include"LightingSystem.h"
 #include"LightData.h"
 #include"ShadowSystem.h"
+#include"IWindow.h"
+#include"GLFWWindow.h"
 #include<memory>
 
 //APPLICATION FACADE CONNECTS ALL SUBSYSTEMS
@@ -14,7 +16,8 @@ public:
 	}
 
 	//Init Application:create objects, assign references, define subsystems
-	void Init();
+	bool Init(); //returns false if some component fails to init
+	void Run(); //Render loop
 	void ShutDown();
 
 	//Lighting system based calls
@@ -25,4 +28,6 @@ private:
 	~Application() = default; //default destructor compiler generated
 	std::unique_ptr<LightingSystem> lightingSystem;
 	std::unique_ptr<ShadowSystem> shadowSystem;
+	std::unique_ptr<IWindow> window;
+	bool running{ false };
 };
