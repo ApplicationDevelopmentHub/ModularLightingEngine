@@ -103,6 +103,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\glfwWIN64\include;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\GLEW\include;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,7 +130,6 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="DirectionalLight.h" />
     <ClInclude Include="GLFWWindow.h" />
-    <ClInclude Include="GPUMesh.h" />
     <ClInclude Include="HighQualityShadow.h" />
     <ClInclude Include="ILightObserver.h" />
     <ClInclude Include="IWindow.h" />
@@ -140,10 +140,17 @@
     <ClInclude Include="LightType.h" />
     <ClInclude Include="LowQualityShadow.h" />
     <ClInclude Include="MediumQualityShadow.h" />
-    <ClInclude Include="MeshData.h" />
+    <ClInclude Include="Mesh.h" />
     <ClInclude Include="NoShadow.h" />
+    <ClInclude Include="OpenGLRenderer.h" />
+    <ClInclude Include="Plane.h" />
     <ClInclude Include="PointLight.h" />
+    <ClInclude Include="Primitive.h" />
     <ClInclude Include="PrimitiveFactory.h" />
+    <ClInclude Include="PrimitiveHandle.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Shader.h" />
     <ClInclude Include="Shadow.h" />
     <ClInclude Include="ShadowFactory.h" />
     <ClInclude Include="ShadowSystem.h" />
@@ -155,7 +162,6 @@
     <ClInclude Include="UIMenuPanel.h" />
     <ClInclude Include="UIPanel.h" />
     <ClInclude Include="UISystem.h" />
-    <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
@@ -163,8 +169,18 @@
     <ClCompile Include="LightFactory.cpp" />
     <ClCompile Include="LightingSystem.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="OpenGLRenderer.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="PrimitiveFactory.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Shader.cpp" />
     <ClCompile Include="ShadowFactory.cpp" />
     <ClCompile Include="ShadowSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basic.frag" />
+    <None Include="basic.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
