@@ -242,6 +242,15 @@
     <ClCompile Include="lib\ImGui\imgui_widgets.cpp">
       <Filter>Source Files\ImguiFiles</Filter>
     </ClCompile>
+    <ClCompile Include="UISystem.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIInspectorPanel.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorContext.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="basic.vert">

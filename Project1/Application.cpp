@@ -46,6 +46,21 @@ bool Application::Init() {
 
 	cameraController = std::make_unique<CameraController>(*camera);
 
+	//---------IMGUI SUBSYSTEM----------------
+	IMGUI_CHECKVERSION();
+	ImGui::CreateContext();
+	ImGui::StyleColorsDark();
+
+	GLFWwindow* glfwWindow =
+		static_cast<GLFWwindow*>(window->GetNativeHandle());
+
+	ImGui_ImplGlfw_InitForOpenGL(glfwWindow, true);
+	ImGui_ImplOpenGL3_Init("#version 330");
+
+	uiSystem = std::make_unique<UISystem>();
+	uiSystem->Init();
+	uiSystem->AddPanel(std::make_unique<UIInspectorPanel>());
+
 	//----------LIGHTING SUBSYSTEM---------
 
 	//----------SHADOW SUBSYSTEM----------
@@ -73,8 +88,25 @@ void Application::Run() {
 		Input::Update();
 		cameraController->Update(deltaTime);
 
+		//UI update
+		ImGui_ImplOpenGL3_NewFrame();
+		ImGui_ImplGlfw_NewFrame();
+		ImGui::NewFrame();
+
+		uiSystem->BeginFrame();
+		uiSystem->DrawFrame(*scene);
+		uiSystem->EndFrame();
+
+		ImGui::Render();
+
+		//--------END UI--------------
+
 		renderer->BeginFrame();
 		renderer->Render(*scene,*camera);
+
+		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
+
 		renderer->EndFrame();
 
 		window->SwapBuffers();

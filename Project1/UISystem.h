@@ -4,11 +4,16 @@
 #include"UIPanel.h"
 #include<vector>
 #include"EditorContext.h"
+
+//forward declerations
+class Scene;
+class UIPanel;
+
 class UISystem {
 public:
 	void Init();
 	void BeginFrame();
-	void DrawFrame();
+	void DrawFrame(Scene& scene);
 	void EndFrame();
 	void AddPanel(std::unique_ptr<UIPanel> panel);
 private:

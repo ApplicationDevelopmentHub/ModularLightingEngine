@@ -12,6 +12,11 @@
 #include"PrimitiveFactory.h"
 #include"Camera.h"
 #include"CameraController.h"
+#include"UISystem.h"
+#include<imgui.h>
+#include<ImGui/imgui_impl_opengl3.h>
+#include<ImGui/imgui_impl_glfw.h>
+#include"UIInspectorPanel.h"
 
 //APPLICATION FACADE CONNECTS ALL SUBSYSTEMS
 class Application {
@@ -47,5 +52,6 @@ private:
 	std::unique_ptr<Scene> scene;
 	std::unique_ptr<Camera> camera;
 	std::unique_ptr<CameraController> cameraController;
+	std::unique_ptr<UISystem> uiSystem;
 	bool running{ false };
 };
