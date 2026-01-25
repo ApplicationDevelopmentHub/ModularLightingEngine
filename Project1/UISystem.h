@@ -3,7 +3,7 @@
 #include<memory>
 #include"UIPanel.h"
 #include<vector>
-
+#include"EditorContext.h"
 class UISystem {
 public:
 	void Init();
@@ -13,4 +13,5 @@ public:
 	void AddPanel(std::unique_ptr<UIPanel> panel);
 private:
 	std::vector<std::unique_ptr<UIPanel>> panels;
+	EditorContext editorContext;
 };

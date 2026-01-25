@@ -102,7 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\glfwWIN64\include;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\GLEW\include;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\ImGui;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\glfwWIN64\include;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib\GLEW\include;C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -131,6 +131,7 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="CameraController.h" />
     <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="EditorContext.h" />
     <ClInclude Include="GLFWWindow.h" />
     <ClInclude Include="HighQualityShadow.h" />
     <ClInclude Include="ILightObserver.h" />
@@ -139,6 +140,7 @@
     <ClInclude Include="Light.h" />
     <ClInclude Include="LightData.h" />
     <ClInclude Include="LightFactory.h" />
+    <ClInclude Include="LightHandle.h" />
     <ClInclude Include="LightingSystem.h" />
     <ClInclude Include="LightType.h" />
     <ClInclude Include="LowQualityShadow.h" />
@@ -172,6 +174,12 @@
     <ClCompile Include="CameraController.cpp" />
     <ClCompile Include="GLFWWindow.cpp" />
     <ClCompile Include="Input.cpp" />
+    <ClCompile Include="lib\ImGui\imgui.cpp" />
+    <ClCompile Include="lib\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="lib\ImGui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="lib\ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="lib\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="lib\ImGui\imgui_widgets.cpp" />
     <ClCompile Include="LightFactory.cpp" />
     <ClCompile Include="LightingSystem.cpp" />
     <ClCompile Include="main.cpp" />

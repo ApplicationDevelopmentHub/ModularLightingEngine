@@ -49,6 +49,9 @@
     <Filter Include="Source Files\Camera">
       <UniqueIdentifier>{fd534d43-2055-42e5-93b9-708d36d15a9f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ImguiFiles">
+      <UniqueIdentifier>{d5251755-1e11-432a-bdb1-8df3470fa9d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Light.h">
@@ -165,6 +168,12 @@
     <ClInclude Include="Input.h">
       <Filter>Source Files\Input</Filter>
     </ClInclude>
+    <ClInclude Include="EditorContext.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LightHandle.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LightFactory.cpp">
@@ -214,6 +223,24 @@
     </ClCompile>
     <ClCompile Include="Input.cpp">
       <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ImGui\imgui.cpp">
+      <Filter>Source Files\ImguiFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ImGui\imgui_draw.cpp">
+      <Filter>Source Files\ImguiFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ImGui\imgui_impl_glfw.cpp">
+      <Filter>Source Files\ImguiFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ImGui\imgui_impl_opengl3.cpp">
+      <Filter>Source Files\ImguiFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ImGui\imgui_tables.cpp">
+      <Filter>Source Files\ImguiFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ImGui\imgui_widgets.cpp">
+      <Filter>Source Files\ImguiFiles</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

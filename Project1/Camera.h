@@ -21,6 +21,8 @@ public:
 	void RotateUp(float degrees);
 	void RotateDown(float degrees);
 
+	void ResetCamera();
+
 	glm::mat4 GetView() const;
 	glm::mat4 GetProjection() const;
 private:

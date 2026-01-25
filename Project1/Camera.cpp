@@ -78,3 +78,11 @@ glm::mat4 Camera::GetView() const {
 glm::mat4 Camera::GetProjection() const {
     return glm::perspective(fov, aspect, nearPlane, farPlane);
 }
+
+void Camera::ResetCamera() {
+    position =glm::vec3(0.0f, 2.0f, 6.0f);
+    worldUp = glm::vec3(0.0f, 1.0f, 0.0f);
+    yaw = -90.0f;
+    pitch = -15.0f;
+    UpdateVectors();
+}

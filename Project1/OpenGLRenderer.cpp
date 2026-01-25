@@ -22,42 +22,6 @@ void OpenGLRenderer::BeginFrame() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
-//Camera pending: workarounf
-//void OpenGLRenderer::BindMaterial() {
-//	shader->Bind();
-//
-//    glm::mat4 model =
-//        glm::rotate(glm::mat4(1.0f),
-//            glm::radians(-90.0f),
-//            glm::vec3(1.0f, 0.0f, 0.0f));
-//
-//    // -------- VIEW (static observer) --------
-//    glm::mat4 view = glm::lookAt(
-//        glm::vec3(0.0f, 3.0f, 6.0f),
-//        glm::vec3(0.0f, 0.0f, 0.0f),
-//        glm::vec3(0.0f, 1.0f, 0.0f)
-//    );
-//
-//    // -------- PROJECTION --------
-//    glm::mat4 projection = glm::perspective(
-//        glm::radians(45.0f),
-//        1920.0f / 1080.0f,
-//        0.1f,
-//        100.0f
-//    );
-//
-//    glm::mat4 mvp = projection * view * model;
-//	shader->SetMat4("uMVP", mvp);
-//	shader->SetVec3("uColor", glm::vec3(0.8f));
-//}
-//
-//void OpenGLRenderer::Render(const Scene& scene,const Camera& cam) {
-//	for (const auto& [id, primitive] : scene.GetPrimitives()) {
-//        SetMVP(glm::mat4(1.0f));
-//		primitive->Draw(*this);
-//	}
-//}
-
 void OpenGLRenderer::Render(
     const Scene& scene,
     const Camera& camera

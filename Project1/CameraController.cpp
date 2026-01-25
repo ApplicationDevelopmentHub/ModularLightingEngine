@@ -10,13 +10,22 @@ void CameraController::Update(float deltaTime) {
     float move = moveSpeed * deltaTime;
     float rot = rotationSpeed * deltaTime;
 
+    //Movement
     if (Input::IsKeyDown(GLFW_KEY_W)) camera.MoveForward(move);
     if (Input::IsKeyDown(GLFW_KEY_S)) camera.MoveBack(move);
     if (Input::IsKeyDown(GLFW_KEY_A)) camera.MoveLeft(move);
     if (Input::IsKeyDown(GLFW_KEY_D)) camera.MoveRight(move);
 
+    //Rotation
     if (Input::IsKeyDown(GLFW_KEY_UP))    camera.RotateUp(rot);
     if (Input::IsKeyDown(GLFW_KEY_DOWN))  camera.RotateDown(rot);
     if (Input::IsKeyDown(GLFW_KEY_LEFT))  camera.RotateLeft(rot);
     if (Input::IsKeyDown(GLFW_KEY_RIGHT)) camera.RotateRight(rot);
+
+    //Up and down
+    if (Input::IsKeyDown(GLFW_KEY_Q)) camera.MoveUp(move);
+    if (Input::IsKeyDown(GLFW_KEY_E)) camera.MoveDown(move);
+
+    //Reset
+    if (Input::IsKeyDown(GLFW_KEY_R)) camera.ResetCamera();
 }
