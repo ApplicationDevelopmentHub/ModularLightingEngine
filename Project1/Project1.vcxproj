@@ -128,10 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraController.h" />
     <ClInclude Include="DirectionalLight.h" />
     <ClInclude Include="GLFWWindow.h" />
     <ClInclude Include="HighQualityShadow.h" />
     <ClInclude Include="ILightObserver.h" />
+    <ClInclude Include="Input.h" />
     <ClInclude Include="IWindow.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="LightData.h" />
@@ -165,7 +168,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraController.cpp" />
     <ClCompile Include="GLFWWindow.cpp" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="LightFactory.cpp" />
     <ClCompile Include="LightingSystem.cpp" />
     <ClCompile Include="main.cpp" />

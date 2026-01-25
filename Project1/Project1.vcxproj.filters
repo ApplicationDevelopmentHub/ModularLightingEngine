@@ -46,6 +46,9 @@
     <Filter Include="Source Files\ShaderPrograms">
       <UniqueIdentifier>{eb95378c-3410-4483-b048-ec230ebc529e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Camera">
+      <UniqueIdentifier>{fd534d43-2055-42e5-93b9-708d36d15a9f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Light.h">
@@ -153,6 +156,15 @@
     <ClInclude Include="Shader.h">
       <Filter>Source Files\Shader</Filter>
     </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Source Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController.h">
+      <Filter>Source Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LightFactory.cpp">
@@ -193,6 +205,15 @@
     </ClCompile>
     <ClCompile Include="Shader.cpp">
       <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\Input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

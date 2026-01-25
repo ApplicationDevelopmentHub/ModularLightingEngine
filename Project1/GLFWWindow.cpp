@@ -36,6 +36,7 @@ bool GLFWWindow::Create(int width, int height, const char* title) {
 
 	window = glfw_window; //assign as the current handle
 	glfwMakeContextCurrent(glfw_window); //This window the one being used by OpenGL currenly
+	glViewport(0, 0, width, height);
 	return true;
 }
 

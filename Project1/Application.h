@@ -10,6 +10,8 @@
 #include"Renderer.h"
 #include"OpenGLRenderer.h"
 #include"PrimitiveFactory.h"
+#include"Camera.h"
+#include"CameraController.h"
 
 //APPLICATION FACADE CONNECTS ALL SUBSYSTEMS
 class Application {
@@ -37,8 +39,13 @@ private:
 	//std::unique_ptr<LightingSystem> lightingSystem;
 	//std::unique_ptr<ShadowSystem> shadowSystem;
 
+	float ComputeDeltaTime();
+	double lastTime = 0.0f;
+
 	std::unique_ptr<IWindow> window;
 	std::unique_ptr<Renderer> renderer;
 	std::unique_ptr<Scene> scene;
+	std::unique_ptr<Camera> camera;
+	std::unique_ptr<CameraController> cameraController;
 	bool running{ false };
 };

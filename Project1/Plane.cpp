@@ -1,7 +1,10 @@
 #include"Plane.h"
 #include<vector>
+#include<iostream>
 
 Plane::Plane(float size):mesh(std::make_unique<Mesh>()) {
+	std::cout << "Plane constructor." << std::endl;
+
 	//layout: pos, normal, uv
 	std::vector<float> vertices = {
 		-size,0,-size,0,1,0,0,0,
@@ -20,6 +23,6 @@ Plane::Plane(float size):mesh(std::make_unique<Mesh>()) {
 }
 
 void Plane::Draw(Renderer& renderer) const {
-	renderer.BindMaterial();
+	//renderer.BindMaterial();
 	mesh->Draw();
 }
