@@ -52,6 +52,9 @@
     <Filter Include="Source Files\ImguiFiles">
       <UniqueIdentifier>{d5251755-1e11-432a-bdb1-8df3470fa9d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Frames">
+      <UniqueIdentifier>{c2f51d34-fd96-4f3c-8c85-ffb80295f971}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Light.h">
@@ -177,6 +180,9 @@
     <ClInclude Include="Sphere.h">
       <Filter>Source Files\Primitive Factory</Filter>
     </ClInclude>
+    <ClInclude Include="FrameTimingHistory.h">
+      <Filter>Source Files\Frames</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LightFactory.cpp">
@@ -262,6 +268,12 @@
     </ClCompile>
     <ClCompile Include="Sphere.cpp">
       <Filter>Source Files\Primitive Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="UILatencyPanel.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameTimingHistory.cpp">
+      <Filter>Source Files\Frames</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

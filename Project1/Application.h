@@ -19,6 +19,8 @@
 #include"UIInspectorPanel.h"
 #include"UIHierarchyPanel.h"
 #include"UIMenuPanel.h"
+#include"UILatencyPanel.h"
+#include"FrameTimingHistory.h"
 
 //APPLICATION FACADE CONNECTS ALL SUBSYSTEMS
 class Application {
@@ -56,5 +58,7 @@ private:
 	std::unique_ptr<Camera> camera;
 	std::unique_ptr<CameraController> cameraController;
 	std::unique_ptr<UISystem> uiSystem;
+
+	FrameTimingHistory frameTimingHistory;
 	bool running{ false };
 };

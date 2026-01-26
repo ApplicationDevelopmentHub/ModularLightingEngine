@@ -132,6 +132,7 @@
     <ClInclude Include="CameraController.h" />
     <ClInclude Include="DirectionalLight.h" />
     <ClInclude Include="EditorContext.h" />
+    <ClInclude Include="FrameTimingHistory.h" />
     <ClInclude Include="GLFWWindow.h" />
     <ClInclude Include="HighQualityShadow.h" />
     <ClInclude Include="ILightObserver.h" />
@@ -174,6 +175,7 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CameraController.cpp" />
     <ClCompile Include="EditorContext.cpp" />
+    <ClCompile Include="FrameTimingHistory.cpp" />
     <ClCompile Include="GLFWWindow.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="lib\ImGui\imgui.cpp" />
@@ -196,6 +198,7 @@
     <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="UIHierarchyPanel.cpp" />
     <ClCompile Include="UIInspectorPanel.cpp" />
+    <ClCompile Include="UILatencyPanel.cpp" />
     <ClCompile Include="UIMenuPanel.cpp" />
     <ClCompile Include="UISystem.cpp" />
   </ItemGroup>

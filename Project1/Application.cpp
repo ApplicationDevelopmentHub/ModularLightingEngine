@@ -63,6 +63,7 @@ bool Application::Init() {
 	uiSystem->AddPanel(std::make_unique<UIInspectorPanel>()); //Inspector panel right
 	uiSystem->AddPanel(std::make_unique<UIHierarchyPanel>()); //Hierarchy panel left
 	uiSystem->AddPanel(std::make_unique<UIMenuPanel>()); //top menu bar
+	uiSystem->AddPanel(std::make_unique<UILatencyPanel>(frameTimingHistory,120.0f)); //below inspector
 
 	//--------UI EDITOR CONTEXT FOR COMMANDS-----------
 	EditorContext& ctx = uiSystem->GetEditorContext();
@@ -97,7 +98,15 @@ bool Application::Init() {
 void Application::Run() {
 	//GLFW window update every frame
 	while (running && !window->ShouldClose()) {
+
+		//Frame times
 		float deltaTime = ComputeDeltaTime();
+		frameTimingHistory.Push(
+			deltaTime * 1000.0f, // CPU ms
+			deltaTime * 1000.0f, // GPU placeholder
+			deltaTime             // seconds
+		);
+
 		window->PollEvents();
 
 		Input::Update();
