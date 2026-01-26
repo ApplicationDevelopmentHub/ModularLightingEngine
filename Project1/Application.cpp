@@ -67,12 +67,8 @@ bool Application::Init() {
 
 	//--------UI EDITOR CONTEXT FOR COMMANDS-----------
 	EditorContext& ctx = uiSystem->GetEditorContext();
-
-	// ---- Primitive creation ----
-	/*ctx.CreatePlane = [this]() {
-		CreatePlane(5.0f);
-		};*/
-
+	
+	//Command pattern form editor context
 	ctx.CreateSphere = [this]() {
 		CreateSphere(1.0f, 32, 64);
 		};
@@ -87,7 +83,7 @@ bool Application::Init() {
 	//UI subscriptions: IMgui
 
 	//-------ENVIRONMENT: PLANE--------------
-	CreatePlane(5.0f);
+	CreatePlane(8.0f);
 
 	//---------SUCCESS-----------------------
 	running = true;

@@ -7,7 +7,7 @@ class FrameTimingHistory {
 public:
     static constexpr size_t MaxSamples = 120;
 
-    explicit FrameTimingHistory(float warmupSeconds = 5.0f);
+    explicit FrameTimingHistory(float warmupSeconds = 10.0f);
 
     void Push(float cpuMs, float gpuMs, float deltaSeconds);
 
@@ -39,7 +39,7 @@ private:
     float worstGPU = 0.0f;
 
     float elapsedSeconds = 0.0f;
-    float warmupSeconds;
+    float warmupSeconds=0.0f;
 
     static float Average(const std::deque<float>& values);
 };

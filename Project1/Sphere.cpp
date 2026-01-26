@@ -83,3 +83,5 @@ void Sphere::Draw(Renderer& renderer) const {
 
     mesh->Draw();
 }
+
+const char* Sphere::GetTypeName() const { return "Sphere"; }

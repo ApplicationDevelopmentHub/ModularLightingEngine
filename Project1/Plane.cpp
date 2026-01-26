@@ -30,3 +30,6 @@ void Plane::Draw(Renderer& renderer) const {
 
 	mesh->Draw();
 }
+
+const char* Plane::GetTypeName() const { return "Plane"; }
+
