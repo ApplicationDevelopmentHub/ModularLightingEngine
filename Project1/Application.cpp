@@ -59,7 +59,22 @@ bool Application::Init() {
 
 	uiSystem = std::make_unique<UISystem>();
 	uiSystem->Init();
-	uiSystem->AddPanel(std::make_unique<UIInspectorPanel>());
+
+	uiSystem->AddPanel(std::make_unique<UIInspectorPanel>()); //Inspector panel right
+	uiSystem->AddPanel(std::make_unique<UIHierarchyPanel>()); //Hierarchy panel left
+	uiSystem->AddPanel(std::make_unique<UIMenuPanel>()); //top menu bar
+
+	//--------UI EDITOR CONTEXT FOR COMMANDS-----------
+	EditorContext& ctx = uiSystem->GetEditorContext();
+
+	// ---- Primitive creation ----
+	/*ctx.CreatePlane = [this]() {
+		CreatePlane(5.0f);
+		};*/
+
+	ctx.CreateSphere = [this]() {
+		CreateSphere(1.0f, 32, 64);
+		};
 
 	//----------LIGHTING SUBSYSTEM---------
 
@@ -121,8 +136,14 @@ void Application::ShutDown() {
 }
 
 PrimitiveHandle Application::CreatePlane(float size) {
-	std::cout << "Attempting primitive factory from facade" << std::endl;
+	std::cout << "Attempting primitive factory from facade." << std::endl;
 	auto p = PrimitiveFactory::CreatePlane(size);
+	return scene->AddPrimitive(std::move(p));
+}
+
+PrimitiveHandle Application::CreateSphere(float radius, uint32_t stacks, uint32_t sectors) {
+	std::cout << "Application facade attempting to create sphere." << std::endl;
+	auto p = PrimitiveFactory::CreateSphere(radius,stacks,sectors);
 	return scene->AddPrimitive(std::move(p));
 }
 

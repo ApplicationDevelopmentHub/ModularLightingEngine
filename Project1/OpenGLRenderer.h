@@ -14,10 +14,9 @@ public:
 	void Render(const Scene& scene, const Camera& cam) override;
 	void EndFrame() override;
 
-	Camera& GetCamera();
-
-	void SetMVP(const glm::mat4& model);
+	void SetMVP(const glm::mat4& model) override;
+	void SetColor(const glm::vec3& col) override;
 private:
 	std::unique_ptr<Shader> shader;
-	std::unique_ptr<Camera> camera;
+	const Camera* camera = nullptr;
 };

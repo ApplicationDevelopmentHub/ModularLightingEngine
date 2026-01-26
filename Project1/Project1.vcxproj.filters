@@ -174,6 +174,9 @@
     <ClInclude Include="LightHandle.h">
       <Filter>Source Files\Light</Filter>
     </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Source Files\Primitive Factory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LightFactory.cpp">
@@ -250,6 +253,15 @@
     </ClCompile>
     <ClCompile Include="EditorContext.cpp">
       <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIHierarchyPanel.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIMenuPanel.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Source Files\Primitive Factory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

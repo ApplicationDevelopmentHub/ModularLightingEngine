@@ -24,13 +24,14 @@ void OpenGLRenderer::BeginFrame() {
 
 void OpenGLRenderer::Render(
     const Scene& scene,
-    const Camera& camera
+    const Camera& cam
 ) {
+    camera = &cam;
     for (const auto& [id, primitive] : scene.GetPrimitives()) {
 
         shader->Bind();
 
-        glm::mat4 model = glm::mat4(1.0f);
+        /*glm::mat4 model = glm::mat4(1.0f);
 
         glm::mat4 mvp =
             camera.GetProjection() *
@@ -38,7 +39,7 @@ void OpenGLRenderer::Render(
             model;
 
         shader->SetMat4("uMVP", mvp);
-        shader->SetVec3("uColor", glm::vec3(0.8f));
+        shader->SetVec3("uColor", glm::vec3(0.8f));*/
 
         primitive->Draw(*this);
     }
@@ -46,10 +47,6 @@ void OpenGLRenderer::Render(
 
 void OpenGLRenderer::EndFrame() {
 	// nothing yet
-}
-
-Camera& OpenGLRenderer::GetCamera() {
-    return *camera;
 }
 
 void OpenGLRenderer::SetMVP(const glm::mat4& model) {
@@ -61,5 +58,10 @@ void OpenGLRenderer::SetMVP(const glm::mat4& model) {
         model;
 
     shader->SetMat4("uMVP", mvp);
-    shader->SetVec3("uColor", glm::vec3(0.8f));
+    //shader->SetVec3("uColor", glm::vec3(0.8f));
+}
+
+void OpenGLRenderer::SetColor(const glm::vec3& color) {
+    // Assumes shader is already bound
+    shader->SetVec3("uColor", color);
 }

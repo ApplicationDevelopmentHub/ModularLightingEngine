@@ -17,6 +17,8 @@
 #include<ImGui/imgui_impl_opengl3.h>
 #include<ImGui/imgui_impl_glfw.h>
 #include"UIInspectorPanel.h"
+#include"UIHierarchyPanel.h"
+#include"UIMenuPanel.h"
 
 //APPLICATION FACADE CONNECTS ALL SUBSYSTEMS
 class Application {
@@ -34,6 +36,7 @@ public:
 
 	//Primitives
 	PrimitiveHandle CreatePlane(float size);
+	PrimitiveHandle CreateSphere(float radius, uint32_t stacks, uint32_t sectors);
 
 	//Lighting system based calls
 	LightHandle AddLight(const Lightdata& dat);

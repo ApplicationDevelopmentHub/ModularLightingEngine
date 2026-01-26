@@ -16,6 +16,7 @@ public:
 	void DrawFrame(Scene& scene);
 	void EndFrame();
 	void AddPanel(std::unique_ptr<UIPanel> panel);
+	EditorContext& GetEditorContext();
 private:
 	std::vector<std::unique_ptr<UIPanel>> panels;
 	EditorContext editorContext;

@@ -2,5 +2,5 @@
 #include"UIPanel.h"
 class UIMenuPanel:public UIPanel {
 public:
-	void Draw() override;
+	void Draw(Scene& scene, EditorContext& ctx) override;
 };

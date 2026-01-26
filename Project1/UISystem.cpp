@@ -22,3 +22,7 @@ void UISystem::EndFrame() {
 void UISystem::AddPanel(std::unique_ptr<UIPanel> panel) {
     panels.emplace_back(std::move(panel));
 }
+
+EditorContext& UISystem::GetEditorContext() {
+    return editorContext;
+}

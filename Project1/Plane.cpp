@@ -23,6 +23,10 @@ Plane::Plane(float size):mesh(std::make_unique<Mesh>()) {
 }
 
 void Plane::Draw(Renderer& renderer) const {
-	//renderer.BindMaterial();
+	glm::mat4 model = glm::mat4(1.0f);
+
+	renderer.SetMVP(model);
+	renderer.SetColor(glm::vec3(0.8f)); // white
+
 	mesh->Draw();
 }

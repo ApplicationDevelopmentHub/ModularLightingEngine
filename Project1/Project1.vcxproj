@@ -160,6 +160,7 @@
     <ClInclude Include="ShadowFactory.h" />
     <ClInclude Include="ShadowSystem.h" />
     <ClInclude Include="ShadowType.h" />
+    <ClInclude Include="Sphere.h" />
     <ClInclude Include="SpotLight.h" />
     <ClInclude Include="UIHierarchyPanel.h" />
     <ClInclude Include="UIInspectorPanel.h" />
@@ -192,7 +193,10 @@
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="ShadowFactory.cpp" />
     <ClCompile Include="ShadowSystem.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="UIHierarchyPanel.cpp" />
     <ClCompile Include="UIInspectorPanel.cpp" />
+    <ClCompile Include="UIMenuPanel.cpp" />
     <ClCompile Include="UISystem.cpp" />
   </ItemGroup>
   <ItemGroup>
