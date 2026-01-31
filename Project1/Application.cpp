@@ -74,7 +74,11 @@ bool Application::Init() {
 		};
 
 	ctx.CreateBox = [this]() {
-		CreateBox(2.0f, 2.0f, 2.0f);
+		CreateBox(1.0f, 1.0f, 1.0f);
+		};
+
+	ctx.CreateCone = [this]() {
+		CreateCone(1.0f, 1.5f, 32.0f);
 		};
 
 	//----------LIGHTING SUBSYSTEM---------
@@ -164,6 +168,11 @@ PrimitiveHandle Application::CreateBox(float length, float width, float height) 
 	return scene->AddPrimitive(std::move(p));
 }
 
+PrimitiveHandle Application::CreateCone(float radius, float height, uint32_t sectors) {
+	std::cout << "Application facade attempting cone." << std::endl;
+	auto p = PrimitiveFactory::CreateCone(radius, height,sectors);
+	return scene->AddPrimitive(std::move(p));
+}
 
 //LIGHTS
 LightHandle Application::AddLight(const Lightdata& dat) {

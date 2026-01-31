@@ -15,3 +15,8 @@ std::unique_ptr<Primitive> PrimitiveFactory::CreateBox(float length, float width
 	std::cout << "Primitive factory creating box." << std::endl;
 	return std::make_unique<Box>(length,width,height);
 }
+
+std::unique_ptr<Primitive> PrimitiveFactory::CreateCone(float radius, float height, uint32_t sectors) {
+	std::cout << "Primtive factory creating cone." << std::endl;
+	return std::make_unique<Cone>(radius, height, sectors);
+}

@@ -131,6 +131,7 @@
     <ClInclude Include="Box.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="CameraController.h" />
+    <ClInclude Include="Cone.h" />
     <ClInclude Include="DirectionalLight.h" />
     <ClInclude Include="EditorContext.h" />
     <ClInclude Include="FrameTimingHistory.h" />
@@ -180,6 +181,7 @@
     <ClCompile Include="Box.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CameraController.cpp" />
+    <ClCompile Include="Cone.cpp" />
     <ClCompile Include="EditorContext.cpp" />
     <ClCompile Include="FrameTimingHistory.cpp" />
     <ClCompile Include="GLFWWindow.cpp" />

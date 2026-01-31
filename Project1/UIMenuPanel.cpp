@@ -15,10 +15,10 @@ void UIMenuPanel::Draw(Scene&, EditorContext& ctx) {
         }
 
         if (ImGui::BeginMenu("Primitive")) {
-            if (ImGui::MenuItem("Plane")) {
+            /*if (ImGui::MenuItem("Plane")) {
                 if (ctx.CreatePlane)
                     ctx.CreatePlane();
-            }
+            }*/
 
             if (ImGui::MenuItem("Box")) {
                 if (ctx.CreateBox)
@@ -28,6 +28,11 @@ void UIMenuPanel::Draw(Scene&, EditorContext& ctx) {
             if (ImGui::MenuItem("Sphere")) {
                 if (ctx.CreateSphere)
                     ctx.CreateSphere();
+            }
+
+            if (ImGui::MenuItem("Cone")) {
+                if (ctx.CreateCone)
+                    ctx.CreateCone();
             }
             ImGui::EndMenu();
         }

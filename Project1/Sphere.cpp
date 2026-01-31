@@ -76,7 +76,7 @@ void Sphere::Draw(Renderer& renderer) const {
     //Adjusting the model matrix to make it lie on top of plane
     glm::mat4 model = glm::translate(
         glm::mat4(1.0f),
-        glm::vec3(0.0f, 1.0f, 0.0f)  // y = 0.5
+        position //from the private field, run time change enabled
     );
 
     renderer.SetMVP(model);
@@ -121,6 +121,13 @@ float Sphere::GetRadius() const {
 
 void Sphere::SetRadius(float radVal) {
     radius = radVal;
+}
+
+const glm::vec3& Sphere::GetPosition() const {
+    return position;
+}
+void Sphere::SetPosition(const glm::vec3& p) {
+    position = p;
 }
 
 //Same as constructor

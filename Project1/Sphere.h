@@ -24,11 +24,15 @@ public:
 	glm::vec3 GetColor() const;
 	void SetColor(const glm::vec3& newColor);
 
+	const glm::vec3& GetPosition() const;
+	void SetPosition(const glm::vec3& p);
+
 	void RebuildMesh();
 private:
 	std::uint32_t stacks;
 	std::uint32_t sectors;
 	float radius;
+	glm::vec3 position{ 0.0f,1.0f,0.0f };
 	glm::vec3 color{ 0.0549f, 0.4353f, 0.4235f };
 	std::unique_ptr<Mesh> mesh;
 

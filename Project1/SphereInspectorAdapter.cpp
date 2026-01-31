@@ -11,6 +11,14 @@ const char* SphereInspectorAdapter::GetLabel() const {
 
 void SphereInspectorAdapter::DrawInspectorUI()
 {
+    // -------- Position (cheap, transform-only) --------
+    glm::vec3 pos = sphere.GetPosition();
+    if (ImGui::DragFloat3("Position", &pos.x, 0.1f)) {
+        sphere.SetPosition(pos);
+    }
+
+    ImGui::Separator();
+
     // -------- Radius (geometry-affecting) --------
     float radius = sphere.GetRadius();
     if (ImGui::DragFloat(
