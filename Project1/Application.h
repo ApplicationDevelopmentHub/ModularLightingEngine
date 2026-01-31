@@ -39,6 +39,7 @@ public:
 	//Primitives
 	PrimitiveHandle CreatePlane(float size);
 	PrimitiveHandle CreateSphere(float radius, uint32_t stacks, uint32_t sectors);
+	PrimitiveHandle CreateBox(float length, float width, float height);
 
 	//Lighting system based calls
 	LightHandle AddLight(const Lightdata& dat);

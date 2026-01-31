@@ -7,6 +7,7 @@
 #include <optional>
 #include <variant>
 #include<functional>
+#include<cstdint>
 
 class EditorContext {
 public:
@@ -26,12 +27,11 @@ public:
     std::optional<PrimitiveHandle> GetSelectedPrimitive() const;
     std::optional<LightHandle> GetSelectedLight() const;
 
-    //Command pattern
-
+    //COMMAND PATTERN IN APPLICATION FACADE
     //Create primitive request: encapsulate as an object
     std::function<void()> CreatePlane;
     std::function<void()> CreateSphere;
-    std::function<void()> CreateCube;
+    std::function<void()> CreateBox;
     std::function<void()> CreateCone;
 
     //Lights
@@ -41,6 +41,7 @@ public:
 
     // Global overrides (editor-level)
     ShadowType globalShadowQuality = ShadowType::LowQuality;
+    //std::optional<uint32_t> GetSelectedId() const;
 
 private:
     SelectionType selectionType{ SelectionType::None };

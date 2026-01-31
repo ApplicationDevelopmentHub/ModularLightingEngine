@@ -12,6 +12,8 @@ public:
 	const std::unordered_map<PrimitiveHandle,
 		std::unique_ptr<Primitive>>& GetPrimitives() const;
 
+	Primitive* GetPrimitive(PrimitiveHandle id);
+
 	//Light handling
 private:
 	PrimitiveHandle nextPrimitiveId{ 1 };

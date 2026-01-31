@@ -6,7 +6,7 @@
 #include <glm/gtc/constants.hpp> // glm::pi
 
 Sphere::Sphere(float radius, uint32_t stacks, uint32_t sectors)
-    : mesh(std::make_unique<Mesh>()) {
+    : mesh(std::make_unique<Mesh>()),stacks(stacks),sectors(sectors) {
 
     std::cout << "Sphere constructor." << std::endl;
 
@@ -73,6 +73,7 @@ Sphere::Sphere(float radius, uint32_t stacks, uint32_t sectors)
 }
 
 void Sphere::Draw(Renderer& renderer) const {
+    //Adjusting the model matrix to make it lie on top of plane
     glm::mat4 model = glm::translate(
         glm::mat4(1.0f),
         glm::vec3(0.0f, 1.0f, 0.0f)  // y = 0.5

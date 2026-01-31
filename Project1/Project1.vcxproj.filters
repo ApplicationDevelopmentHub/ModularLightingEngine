@@ -55,6 +55,9 @@
     <Filter Include="Source Files\Frames">
       <UniqueIdentifier>{c2f51d34-fd96-4f3c-8c85-ffb80295f971}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\InspectorBasedModification">
+      <UniqueIdentifier>{db90ebba-fae2-4f39-9d5f-9e597ea150d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Light.h">
@@ -183,6 +186,18 @@
     <ClInclude Include="FrameTimingHistory.h">
       <Filter>Source Files\Frames</Filter>
     </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Source Files\Primitive Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="IInspectorEditable.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneInspectorAdapter.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
+    <ClInclude Include="InspectorAdapterFactory.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LightFactory.cpp">
@@ -274,6 +289,15 @@
     </ClCompile>
     <ClCompile Include="FrameTimingHistory.cpp">
       <Filter>Source Files\Frames</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Source Files\Primitive Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneInspectorAdapter.cpp">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClCompile>
+    <ClCompile Include="InspectorAdapterFactory.cpp">
+      <Filter>Source Files\InspectorBasedModification</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

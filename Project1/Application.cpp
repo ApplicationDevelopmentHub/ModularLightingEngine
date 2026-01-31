@@ -73,6 +73,10 @@ bool Application::Init() {
 		CreateSphere(1.0f, 32, 64);
 		};
 
+	ctx.CreateBox = [this]() {
+		CreateBox(2.0f, 2.0f, 2.0f);
+		};
+
 	//----------LIGHTING SUBSYSTEM---------
 
 	//----------SHADOW SUBSYSTEM----------
@@ -140,6 +144,8 @@ void Application::ShutDown() {
 	//lightingSystem->UnregisterObserver(shadowSystem.get());
 }
 
+//PRIMITIVES
+
 PrimitiveHandle Application::CreatePlane(float size) {
 	std::cout << "Attempting primitive factory from facade." << std::endl;
 	auto p = PrimitiveFactory::CreatePlane(size);
@@ -152,6 +158,14 @@ PrimitiveHandle Application::CreateSphere(float radius, uint32_t stacks, uint32_
 	return scene->AddPrimitive(std::move(p));
 }
 
+PrimitiveHandle Application::CreateBox(float length, float width, float height) {
+	std::cout << "Application facade attempting box." << std::endl;
+	auto p = PrimitiveFactory::CreateBox(length, width, height);
+	return scene->AddPrimitive(std::move(p));
+}
+
+
+//LIGHTS
 LightHandle Application::AddLight(const Lightdata& dat) {
 
 	//ENABLE LATER

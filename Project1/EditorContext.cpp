@@ -2,7 +2,7 @@
 
 void EditorContext::SelectPrimitive(PrimitiveHandle id) {
     selectionType = SelectionType::Primitive;
-   /* selection = id;*/
+    selection = id;
 }
 
 void EditorContext::SelectLight(LightHandle id) {
@@ -22,9 +22,9 @@ EditorContext::GetSelectionType() const {
 
 std::optional<PrimitiveHandle>
 EditorContext::GetSelectedPrimitive() const {
-    /*if (selectionType == SelectionType::Primitive) {
+    if (selectionType == SelectionType::Primitive) {
         return std::get<PrimitiveHandle>(selection);
-    }*/
+    }
     return std::nullopt;
 }
 
@@ -35,3 +35,10 @@ EditorContext::GetSelectedLight() const {
     }*/
     return std::nullopt;
 }
+
+//std::optional<uint32_t> EditorContext::GetSelectedId() const {
+//    if (selectionType == SelectionType::None)
+//        return std::nullopt;
+//
+//    return std::get<uint32_t>(selection);
+//}

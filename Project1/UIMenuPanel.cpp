@@ -20,9 +20,9 @@ void UIMenuPanel::Draw(Scene&, EditorContext& ctx) {
                     ctx.CreatePlane();
             }
 
-            if (ImGui::MenuItem("Cube")) {
-                if (ctx.CreateCube)
-                    ctx.CreateCube();
+            if (ImGui::MenuItem("Box")) {
+                if (ctx.CreateBox)
+                    ctx.CreateBox();
             }
 
             if (ImGui::MenuItem("Sphere")) {

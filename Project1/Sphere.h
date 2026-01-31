@@ -11,5 +11,7 @@ public:
 	const char* GetTypeName() const override;
 	void Draw(Renderer& renderer) const override;
 private:
+	std::uint32_t stacks;
+	std::uint32_t sectors;
 	std::unique_ptr<Mesh> mesh;
 };

@@ -63,5 +63,6 @@ void OpenGLRenderer::SetMVP(const glm::mat4& model) {
 
 void OpenGLRenderer::SetColor(const glm::vec3& color) {
     // Assumes shader is already bound
+    shader->Bind();
     shader->SetVec3("uColor", color);
 }

@@ -10,3 +10,8 @@ std::unique_ptr<Primitive> PrimitiveFactory::CreateSphere(float radius, uint32_t
 	std::cout << "Primitive factory creating sphere" << std::endl;
 	return std::make_unique<Sphere>(radius,stacks,sectors);
 }
+
+std::unique_ptr<Primitive> PrimitiveFactory::CreateBox(float length, float width, float height) {
+	std::cout << "Primitive factory creating box." << std::endl;
+	return std::make_unique<Box>(length,width,height);
+}
