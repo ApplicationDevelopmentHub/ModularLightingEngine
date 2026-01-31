@@ -16,7 +16,7 @@ void UIInspectorPanel::Draw(Scene& scene, EditorContext& ctx)
 
     const float panelWidth = 300.0f;
 
-    ImVec2 workPos = viewport->WorkPos;
+    ImVec2 workPos  = viewport->WorkPos;
     ImVec2 workSize = viewport->WorkSize;
 
     ImGui::SetNextWindowPos(
@@ -25,7 +25,7 @@ void UIInspectorPanel::Draw(Scene& scene, EditorContext& ctx)
     );
 
     ImGui::SetNextWindowSize(
-        ImVec2(panelWidth, workSize.y),
+        ImVec2(panelWidth, workSize.y * 0.8f),
         ImGuiCond_Always
     );
 
@@ -47,7 +47,7 @@ void UIInspectorPanel::Draw(Scene& scene, EditorContext& ctx)
     static PrimitiveHandle lastId{}; // value = 0
 
     const auto currentType = ctx.GetSelectionType();
-    const auto currentId = ctx.GetSelectedPrimitive();
+    const auto currentId   = ctx.GetSelectedPrimitive();
 
     const bool selectionChanged =
         currentType != lastType ||
@@ -57,7 +57,7 @@ void UIInspectorPanel::Draw(Scene& scene, EditorContext& ctx)
     if (selectionChanged) {
         adapter = InspectorAdapterFactory::Create(scene, ctx);
         lastType = currentType;
-        lastId = currentId.value_or(PrimitiveHandle{});
+        lastId   = currentId.value_or(PrimitiveHandle{});
     }
 
     // ------------------------------------------------------------
@@ -75,12 +75,12 @@ void UIInspectorPanel::Draw(Scene& scene, EditorContext& ctx)
 
     adapter->DrawInspectorUI();
 
-    /*if (adapter->HasPendingChanges()) {
+    if (adapter->HasPendingChanges()) {
         ImGui::Separator();
         if (ImGui::Button("Apply")) {
             adapter->ApplyChanges();
         }
-    }*/
+    }
 
     ImGui::End();
 }

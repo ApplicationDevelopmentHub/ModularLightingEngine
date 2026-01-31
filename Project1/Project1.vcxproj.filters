@@ -198,6 +198,9 @@
     <ClInclude Include="InspectorAdapterFactory.h">
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClInclude>
+    <ClInclude Include="SphereInspectorAdapter.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LightFactory.cpp">
@@ -297,6 +300,9 @@
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClCompile>
     <ClCompile Include="InspectorAdapterFactory.cpp">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereInspectorAdapter.cpp">
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClCompile>
   </ItemGroup>

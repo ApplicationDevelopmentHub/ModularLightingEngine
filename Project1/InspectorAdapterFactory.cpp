@@ -7,9 +7,11 @@
 #include "Scene.h"
 #include "Primitive.h"
 #include "Plane.h"
+#include"Sphere.h"
 
 // Inspector adapters
 #include "PlaneInspectorAdapter.h"
+#include"SphereInspectorAdapter.h"
 
 std::unique_ptr<IInspectorEditable>
 InspectorAdapterFactory::Create(Scene& scene, EditorContext& ctx)
@@ -29,6 +31,11 @@ InspectorAdapterFactory::Create(Scene& scene, EditorContext& ctx)
     // ---- Plane ----
     if (auto* plane = dynamic_cast<Plane*>(primitive)) {
         return std::make_unique<PlaneInspectorAdapter>(*plane);
+    }
+
+    //Sphere
+    if (auto* sphere = dynamic_cast<Sphere*>(primitive)) {
+        return std::make_unique<SphereInspectorAdapter>(*sphere);
     }
 
     // ---- Future primitives ----
