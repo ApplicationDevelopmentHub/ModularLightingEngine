@@ -64,11 +64,11 @@ bool Application::Init() {
 	uiSystem->AddPanel(std::make_unique<UIHierarchyPanel>()); //Hierarchy panel left
 	uiSystem->AddPanel(std::make_unique<UIMenuPanel>()); //top menu bar
 	uiSystem->AddPanel(std::make_unique<UILatencyPanel>(frameTimingHistory,120.0f)); //below inspector
-
-	//--------UI EDITOR CONTEXT FOR COMMANDS-----------
+		
+	//EDITOR CONTEXT: COMMAND PATTERN
 	EditorContext& ctx = uiSystem->GetEditorContext();
-	
-	//Command pattern form editor context
+
+	//Create primitives
 	ctx.CreateSphere = [this]() {
 		CreateSphere(1.0f, 32, 64);
 		};
@@ -79,6 +79,11 @@ bool Application::Init() {
 
 	ctx.CreateCone = [this]() {
 		CreateCone(1.0f, 1.5f, 32.0f);
+		};
+
+	//Delete primitives
+	ctx.DeleteSelectedPrimitive = [this](PrimitiveHandle id) {
+		scene->RemovePrimitive(id);
 		};
 
 	//----------LIGHTING SUBSYSTEM---------

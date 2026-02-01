@@ -8,10 +8,14 @@
 #include "Primitive.h"
 #include "Plane.h"
 #include"Sphere.h"
+#include"Cone.h"
+#include"Box.h"
 
 // Inspector adapters
 #include "PlaneInspectorAdapter.h"
 #include"SphereInspectorAdapter.h"
+#include"BoxInspectorAdapter.h"
+#include"ConeInspectorAdapter.h"
 
 std::unique_ptr<IInspectorEditable>
 InspectorAdapterFactory::Create(Scene& scene, EditorContext& ctx)
@@ -30,12 +34,22 @@ InspectorAdapterFactory::Create(Scene& scene, EditorContext& ctx)
 
     // ---- Plane ----
     if (auto* plane = dynamic_cast<Plane*>(primitive)) {
-        return std::make_unique<PlaneInspectorAdapter>(*plane);
+        return std::make_unique<PlaneInspectorAdapter>(*plane, *idOpt);
     }
 
     //Sphere
     if (auto* sphere = dynamic_cast<Sphere*>(primitive)) {
-        return std::make_unique<SphereInspectorAdapter>(*sphere);
+        return std::make_unique<SphereInspectorAdapter>(*sphere, *idOpt);
+    }
+
+    //Box
+    if (auto* box = dynamic_cast<Box*>(primitive)) {
+        return std::make_unique<BoxInspectorAdapter>(*box, *idOpt);
+    }
+
+    //Cone
+    if (auto* cone = dynamic_cast<Cone*>(primitive)) {
+        return std::make_unique<ConeInspectorAdapter>(*cone, *idOpt);
     }
 
     // ---- Future primitives ----

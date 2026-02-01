@@ -204,6 +204,12 @@
     <ClInclude Include="Cone.h">
       <Filter>Source Files\Primitive Factory</Filter>
     </ClInclude>
+    <ClInclude Include="BoxInspectorAdapter.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
+    <ClInclude Include="ConeInspectorAdapter.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LightFactory.cpp">
@@ -310,6 +316,12 @@
     </ClCompile>
     <ClCompile Include="Cone.cpp">
       <Filter>Source Files\Primitive Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxInspectorAdapter.cpp">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClCompile>
+    <ClCompile Include="ConeInspectorAdapter.cpp">
+      <Filter>Source Files\InspectorBasedModification</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

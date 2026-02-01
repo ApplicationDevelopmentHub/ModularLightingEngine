@@ -1,8 +1,8 @@
 ﻿#include "SphereInspectorAdapter.h"
 #include <imgui.h>
 
-SphereInspectorAdapter::SphereInspectorAdapter(Sphere& sphere)
-    : sphere(sphere) {
+SphereInspectorAdapter::SphereInspectorAdapter(Sphere& sphere, PrimitiveHandle id)
+    : sphere(sphere),id(id) {
 }
 
 const char* SphereInspectorAdapter::GetLabel() const {
@@ -63,6 +63,13 @@ void SphereInspectorAdapter::DrawInspectorUI()
     if (ImGui::ColorEdit3("Color", &color.x)) {
         sphere.SetColor(color); // instant visual update
     }
+
+    ImGui::Separator();
+    ImGui::PushStyleColor(ImGuiCol_Button, { 0.1725f, 0.2824f, 0.6588f, 1.0f });
+    if (ImGui::Button("Delete Sphere")) {
+        deleteRequested = true;
+    }
+    ImGui::PopStyleColor();
 }
 
 bool SphereInspectorAdapter::HasPendingChanges() const {
@@ -71,4 +78,8 @@ bool SphereInspectorAdapter::HasPendingChanges() const {
 
 void SphereInspectorAdapter::ApplyChanges() {
     // live editing → nothing to apply
+}
+
+bool SphereInspectorAdapter::WantsDelete() const {
+    return deleteRequested;
 }

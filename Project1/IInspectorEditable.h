@@ -13,5 +13,7 @@ public:
 
     // Commit buffered changes into engine data
     virtual void ApplyChanges() = 0;
+
+    virtual bool WantsDelete() const { return false; } //for deletion
 };
 

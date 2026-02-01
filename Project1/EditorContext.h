@@ -34,6 +34,8 @@ public:
     std::function<void()> CreateBox;
     std::function<void()> CreateCone;
 
+    std::function<void(PrimitiveHandle) > DeleteSelectedPrimitive;
+
     //Lights
     std::function<void()> CreateDirectionalLight;
     std::function<void()> CreatePointLight;

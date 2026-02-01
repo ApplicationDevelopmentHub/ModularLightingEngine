@@ -20,3 +20,7 @@ Primitive* Scene::GetPrimitive(PrimitiveHandle id) {
 
 	return it->second.get();
 }
+
+void Scene::RemovePrimitive(PrimitiveHandle id) {
+	primitives.erase(id);
+}

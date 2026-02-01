@@ -75,11 +75,23 @@ void UIInspectorPanel::Draw(Scene& scene, EditorContext& ctx)
 
     adapter->DrawInspectorUI();
 
-    if (adapter->HasPendingChanges()) {
+    /*if (adapter->HasPendingChanges()) {
         ImGui::Separator();
         if (ImGui::Button("Apply")) {
             adapter->ApplyChanges();
         }
+    }*/
+    if (adapter->WantsDelete()) {
+        auto id = ctx.GetSelectedPrimitive();
+        if (id && ctx.DeleteSelectedPrimitive) {
+            ctx.DeleteSelectedPrimitive(*id);
+        }
+
+        ctx.ClearSelection();
+        adapter.reset();
+
+        ImGui::End();
+        return; // IMPORTANT: stop drawing this frame
     }
 
     ImGui::End();

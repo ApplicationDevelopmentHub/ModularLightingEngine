@@ -7,28 +7,14 @@
 //    editColor(plane.GetColor()) {
 //}
 
-PlaneInspectorAdapter::PlaneInspectorAdapter(Plane& plane)
-    : plane(plane) {
+PlaneInspectorAdapter::PlaneInspectorAdapter(Plane& plane, PrimitiveHandle id)
+    : plane(plane),id(id) {
 }
 
 const char* PlaneInspectorAdapter::GetLabel() const {
     return "Plane";
 }
 
-//void PlaneInspectorAdapter::DrawInspectorUI() {
-//    dirty |= ImGui::DragFloat(
-//        "Size",
-//        &editSize,
-//        0.1f,
-//        0.1f,
-//        100.0f
-//    );
-//
-//    dirty |= ImGui::ColorEdit3(
-//        "Color",
-//        &editColor.x
-//    );
-//}
 
 void PlaneInspectorAdapter::DrawInspectorUI()
 {
@@ -50,6 +36,15 @@ void PlaneInspectorAdapter::DrawInspectorUI()
     if (ImGui::ColorEdit3("Color", &color.x)) {
         plane.SetColor(color); //  instant visual update
     }
+
+
+    //NO DELETION OF PLANE POSSIBLE
+    /*ImGui::Separator();
+    ImGui::PushStyleColor(ImGuiCol_Button, { 0.1725f, 0.2824f, 0.6588f, 1.0f });
+    if (ImGui::Button("Delete Plane")) {
+        deleteRequested = true;
+    }
+    ImGui::PopStyleColor();*/
 }
 
 bool PlaneInspectorAdapter::HasPendingChanges() const {
@@ -63,4 +58,8 @@ void PlaneInspectorAdapter::ApplyChanges() {
     plane.RebuildMesh();   // important: expensive work happens once
 
     dirty = false;
+}
+
+bool PlaneInspectorAdapter::WantsDelete() const {
+    return deleteRequested;
 }

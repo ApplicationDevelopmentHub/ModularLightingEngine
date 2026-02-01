@@ -6,7 +6,7 @@
 
 class Scene {
 public:
-	//Primitives handling
+	//PRIMITIVES
 	PrimitiveHandle AddPrimitive(std::unique_ptr<Primitive> primitive); //Only stores primitives
 
 	const std::unordered_map<PrimitiveHandle,
@@ -14,7 +14,9 @@ public:
 
 	Primitive* GetPrimitive(PrimitiveHandle id);
 
-	//Light handling
+	void RemovePrimitive(PrimitiveHandle id);
+
+	//LIGHTS
 private:
 	PrimitiveHandle nextPrimitiveId{ 1 };
 	std::unordered_map<PrimitiveHandle, std::unique_ptr<Primitive>> primitives;

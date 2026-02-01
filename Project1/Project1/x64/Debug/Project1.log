@@ -1,7 +1,6 @@
-﻿  Application.cpp
-C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\Application.cpp(81,26): warning C4244: 'argument': conversion from 'float' to 'uint32_t', possible loss of data
-  Cone.cpp
-  PrimitiveFactory.cpp
-  main.cpp
+﻿  BoxInspectorAdapter.cpp
+  ConeInspectorAdapter.cpp
+  PlaneInspectorAdapter.cpp
+  SphereInspectorAdapter.cpp
   Generating Code...
   Project1.vcxproj -> C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\x64\Debug\Project1.exe
