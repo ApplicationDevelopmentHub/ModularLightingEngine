@@ -79,7 +79,9 @@ void Box::Draw(Renderer& renderer) const {
     );
 
     renderer.SetMVP(model);
-    renderer.SetColor(color); // neutral box color
+    //renderer.SetColor(color); // neutral box color
+    renderer.ApplyMaterial(*GetMaterial());
+
 
     mesh->Draw();
 }

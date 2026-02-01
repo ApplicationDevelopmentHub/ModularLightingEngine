@@ -1,15 +1,24 @@
 #pragma once
-#include"Light.h"
-#include<glm/glm.hpp>
+#include <glm/glm.hpp>
 
-//PROPERTIES: DIRECTION, COLOR, INTENSITY
-class DirectionalLight :public Light {
-public:
-	DirectionalLight(glm::vec3 dir, glm::vec3 col, float intensity) :
-		Light(LightType::Directional),direction(dir),color(col),intensity(intensity){}
+struct DirectionalLight {
+    glm::vec3 direction{ -0.2f, -1.0f, -0.3f }; // world-space
+    glm::vec3 color{ 1.0f, 1.0f, 1.0f };
+    float intensity{ 1.0f };
 
-	//Light Type field already inherited from the base class:: to be added in constructor
-	glm::vec3 direction;
-	glm::vec3 color;
-	float intensity;
+    // ---- Enable / disable ----
+    bool enabled{ true };
+
+    // ---- Getters (engine + inspector friendly) ----
+    const glm::vec3& GetDirection() const { return direction; }
+    void SetDirection(const glm::vec3& dir) { direction = glm::normalize(dir); }
+
+    const glm::vec3& GetColor() const { return color; }
+    void SetColor(const glm::vec3& c) { color = c; }
+
+    float GetIntensity() const { return intensity; }
+    void SetIntensity(float i) { intensity = i; }
+
+    bool IsEnabled() const { return enabled; }
+    void SetEnabled(bool e) { enabled = e; }
 };

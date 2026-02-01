@@ -31,11 +31,47 @@ void PlaneInspectorAdapter::DrawInspectorUI()
         plane.RebuildMesh();   //  expensive work only when needed
     }
 
-    // -------- Color (cheap, visual-only) --------
-    glm::vec3 color = plane.GetColor();
-    if (ImGui::ColorEdit3("Color", &color.x)) {
-        plane.SetColor(color); //  instant visual update
+    ImGui::Separator();
+
+    // -------- Material (PBR) --------
+    Material& mat = *plane.GetMaterial();
+
+    ImGui::Separator();
+    ImGui::TextUnformatted("PBR Material Properties");
+    ImGui::Separator();
+
+
+    // -------- Albedo --------
+    glm::vec3 albedo = mat.GetAlbedo();
+    if (ImGui::ColorEdit3("Albedo", &albedo.x)) {
+        mat.SetAlbedo(albedo);
     }
+
+    // -------- Roughness --------
+    float roughness = mat.GetRoughness();
+    if (ImGui::SliderFloat("Roughness", &roughness, 0.0f, 1.0f)) {
+        mat.SetRoughness(roughness);
+    }
+
+    // -------- Metallic --------
+    float metallic = mat.GetMetallic();
+    if (ImGui::SliderFloat("Metallic", &metallic, 0.0f, 1.0f)) {
+        mat.SetMetallic(metallic);
+    }
+
+    // -------- Ambient Occlusion --------
+    float ao = mat.GetAO();
+    if (ImGui::SliderFloat("AO", &ao, 0.0f, 1.0f)) {
+        mat.SetAO(ao);
+    }
+
+    ImGui::Separator();
+
+    // -------- Color (cheap, visual-only) --------
+    //glm::vec3 color = plane.GetColor();
+    //if (ImGui::ColorEdit3("Color", &color.x)) {
+    //    plane.SetColor(color); //  instant visual update
+    //}
 
 
     //NO DELETION OF PLANE POSSIBLE

@@ -16,6 +16,8 @@ public:
 
 	void SetMVP(const glm::mat4& model) override;
 	void SetColor(const glm::vec3& col) override;
+
+	void ApplyMaterial(const Material& material) override;
 private:
 	std::unique_ptr<Shader> shader;
 	const Camera* camera = nullptr;

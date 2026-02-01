@@ -4,6 +4,7 @@
 #include"Mesh.h"
 #include<glm/glm.hpp>
 #include<glm/gtc/matrix_transform.hpp>
+#include"Material.h"
 
 class Sphere :public Primitive {
 public:
@@ -37,4 +38,6 @@ private:
 	std::unique_ptr<Mesh> mesh;
 
 	void BuildMesh();
+
+	std::shared_ptr<Material> material;
 };

@@ -80,7 +80,9 @@ void Sphere::Draw(Renderer& renderer) const {
     );
 
     renderer.SetMVP(model);
-    renderer.SetColor(color); // cyan
+    //renderer.SetColor(color); // cyan
+    renderer.ApplyMaterial(*GetMaterial());
+
 
     mesh->Draw();
 }

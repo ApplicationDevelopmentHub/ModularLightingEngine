@@ -11,8 +11,8 @@
 //Path fetching is defined in Shader program
 OpenGLRenderer::OpenGLRenderer() {
 	shader = std::make_unique<Shader>(
-		"basic.vert",
-		"basic.frag"
+		"pbr.vert",
+		"pbr.frag"
 	);
 }
 
@@ -66,3 +66,17 @@ void OpenGLRenderer::SetColor(const glm::vec3& color) {
     shader->Bind();
     shader->SetVec3("uColor", color);
 }
+
+void OpenGLRenderer::ApplyMaterial(const Material& material)
+{
+    shader->Bind();
+
+    shader->SetInt("uShadingModel",
+        static_cast<int>(material.GetShadingModel()));
+
+    shader->SetVec3("uAlbedo", material.GetAlbedo());
+    shader->SetFloat("uMetallic", material.GetMetallic());
+    shader->SetFloat("uRoughness", material.GetRoughness());
+    shader->SetFloat("uAO", material.GetAO());
+}
+

@@ -60,11 +60,47 @@ void ConeInspectorAdapter::DrawInspectorUI()
 
     ImGui::Separator();
 
-    // ---------- Color (cheap, visual-only) ----------
-    glm::vec3 color = cone.GetColor();
-    if (ImGui::ColorEdit3("Color", &color.x)) {
-        cone.SetColor(color);
+    ImGui::Separator();
+
+    // -------- Material (PBR) --------
+    Material& mat = *cone.GetMaterial();
+
+    ImGui::Separator();
+    ImGui::TextUnformatted("PBR Material Properties");
+    ImGui::Separator();
+
+
+    // -------- Albedo --------
+    glm::vec3 albedo = mat.GetAlbedo();
+    if (ImGui::ColorEdit3("Albedo", &albedo.x)) {
+        mat.SetAlbedo(albedo);
     }
+
+    // -------- Roughness --------
+    float roughness = mat.GetRoughness();
+    if (ImGui::SliderFloat("Roughness", &roughness, 0.0f, 1.0f)) {
+        mat.SetRoughness(roughness);
+    }
+
+    // -------- Metallic --------
+    float metallic = mat.GetMetallic();
+    if (ImGui::SliderFloat("Metallic", &metallic, 0.0f, 1.0f)) {
+        mat.SetMetallic(metallic);
+    }
+
+    // -------- Ambient Occlusion --------
+    float ao = mat.GetAO();
+    if (ImGui::SliderFloat("AO", &ao, 0.0f, 1.0f)) {
+        mat.SetAO(ao);
+    }
+
+    ImGui::Separator();
+
+    //// ---------- Color (cheap, visual-only) ----------
+    //glm::vec3 color = cone.GetColor();
+    //if (ImGui::ColorEdit3("Color", &color.x)) {
+    //    cone.SetColor(color);
+    //}
 
     ImGui::Separator();
     ImGui::PushStyleColor(ImGuiCol_Button, { 0.1725f, 0.2824f, 0.6588f, 1.0f });

@@ -2,7 +2,6 @@
 #include <imgui.h>
 #include "Scene.h"
 #include "EditorContext.h"
-#include "ShadowType.h"
 
 void UIMenuPanel::Draw(Scene&, EditorContext& ctx) {
 
@@ -38,20 +37,23 @@ void UIMenuPanel::Draw(Scene&, EditorContext& ctx) {
         }
 
         if (ImGui::BeginMenu("Light")) {
-            ImGui::MenuItem("Directional");
+            if (ImGui::MenuItem("Directional")) {
+                if (ctx.CreateDirectionalLight)
+                    ctx.CreateDirectionalLight();
+            }
             ImGui::MenuItem("Point");
             ImGui::MenuItem("Spot");
             ImGui::EndMenu();
         }
 
-        if (ImGui::BeginMenu("Shadow")) {
+        /*if (ImGui::BeginMenu("Shadow")) {
             int q = static_cast<int>(ctx.globalShadowQuality);
             ImGui::Combo("Quality", &q,
                 "None\0Low\0Medium\0High\0");
             ctx.globalShadowQuality =
                 static_cast<ShadowType>(q);
             ImGui::EndMenu();
-        }
+        }*/
 
         ImGui::EndMainMenuBar();
     }

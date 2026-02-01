@@ -1,5 +1,6 @@
 #pragma once
 #include<glm/glm.hpp>
+#include"Material.h"
 
 class Scene;
 class Camera;
@@ -14,5 +15,7 @@ public:
 
 	virtual void SetMVP(const glm::mat4& model)=0;
 	virtual void SetColor(const glm::vec3& col)=0;
+
+	virtual void ApplyMaterial(const Material& material) = 0;
 private:
 };

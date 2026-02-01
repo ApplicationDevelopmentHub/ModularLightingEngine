@@ -1,9 +1,7 @@
 #pragma once
 
 #include "PrimitiveHandle.h"
-#include "LightHandle.h"
-#include "ShadowType.h"
-
+#include"LightHandle.h"
 #include <optional>
 #include <variant>
 #include<functional>
@@ -25,7 +23,7 @@ public:
     // Query selection state
     SelectionType GetSelectionType() const;
     std::optional<PrimitiveHandle> GetSelectedPrimitive() const;
-    std::optional<LightHandle> GetSelectedLight() const;
+    std::optional<LightHandle>     GetSelectedLight() const;
 
     //COMMAND PATTERN IN APPLICATION FACADE
     //Create primitive request: encapsulate as an object
@@ -41,11 +39,9 @@ public:
     std::function<void()> CreatePointLight;
     std::function<void()> CreateSpotLight;
 
-    // Global overrides (editor-level)
-    ShadowType globalShadowQuality = ShadowType::LowQuality;
-    //std::optional<uint32_t> GetSelectedId() const;
+    std::function<void(LightHandle)> DeleteSelectedLight;
 
 private:
     SelectionType selectionType{ SelectionType::None };
-    std::variant<std::monostate, PrimitiveHandle, LightHandle> selection;
+    std::variant<std::monostate, PrimitiveHandle,LightHandle> selection;
 };

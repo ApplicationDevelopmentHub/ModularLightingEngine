@@ -20,7 +20,9 @@ void Cone::Draw(Renderer& renderer) const
     glm::mat4 model = glm::translate(glm::mat4(1.0f), position);
 
     renderer.SetMVP(model);
-    renderer.SetColor(color);
+    //renderer.SetColor(color);
+    renderer.ApplyMaterial(*GetMaterial());
+
 
     mesh->Draw();
 }

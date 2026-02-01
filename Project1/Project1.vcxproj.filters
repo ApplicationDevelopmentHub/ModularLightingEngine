@@ -58,61 +58,13 @@
     <Filter Include="Source Files\InspectorBasedModification">
       <UniqueIdentifier>{db90ebba-fae2-4f39-9d5f-9e597ea150d4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Material as Data">
+      <UniqueIdentifier>{795144e1-e94d-47f1-b2c3-565200f548f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Light.h">
-      <Filter>Source Files\Light</Filter>
-    </ClInclude>
-    <ClInclude Include="DirectionalLight.h">
-      <Filter>Source Files\Light</Filter>
-    </ClInclude>
-    <ClInclude Include="PointLight.h">
-      <Filter>Source Files\Light</Filter>
-    </ClInclude>
-    <ClInclude Include="SpotLight.h">
-      <Filter>Source Files\Light</Filter>
-    </ClInclude>
-    <ClInclude Include="LightType.h">
-      <Filter>Source Files\Light</Filter>
-    </ClInclude>
-    <ClInclude Include="LightData.h">
-      <Filter>Source Files\Light</Filter>
-    </ClInclude>
-    <ClInclude Include="LightFactory.h">
-      <Filter>Source Files\Light</Filter>
-    </ClInclude>
-    <ClInclude Include="LightingSystem.h">
-      <Filter>Source Files\Light</Filter>
-    </ClInclude>
     <ClInclude Include="Application.h">
       <Filter>Source Files\Application</Filter>
-    </ClInclude>
-    <ClInclude Include="ShadowSystem.h">
-      <Filter>Source Files\Shadow</Filter>
-    </ClInclude>
-    <ClInclude Include="ShadowType.h">
-      <Filter>Source Files\Shadow</Filter>
-    </ClInclude>
-    <ClInclude Include="Shadow.h">
-      <Filter>Source Files\Shadow</Filter>
-    </ClInclude>
-    <ClInclude Include="NoShadow.h">
-      <Filter>Source Files\Shadow</Filter>
-    </ClInclude>
-    <ClInclude Include="LowQualityShadow.h">
-      <Filter>Source Files\Shadow</Filter>
-    </ClInclude>
-    <ClInclude Include="MediumQualityShadow.h">
-      <Filter>Source Files\Shadow</Filter>
-    </ClInclude>
-    <ClInclude Include="HighQualityShadow.h">
-      <Filter>Source Files\Shadow</Filter>
-    </ClInclude>
-    <ClInclude Include="ShadowFactory.h">
-      <Filter>Source Files\Shadow</Filter>
-    </ClInclude>
-    <ClInclude Include="ILightObserver.h">
-      <Filter>Source Files\Light</Filter>
     </ClInclude>
     <ClInclude Include="UISystem.h">
       <Filter>Source Files\UI</Filter>
@@ -177,9 +129,6 @@
     <ClInclude Include="EditorContext.h">
       <Filter>Source Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="LightHandle.h">
-      <Filter>Source Files\Light</Filter>
-    </ClInclude>
     <ClInclude Include="Sphere.h">
       <Filter>Source Files\Primitive Factory</Filter>
     </ClInclude>
@@ -210,22 +159,25 @@
     <ClInclude Include="ConeInspectorAdapter.h">
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Source Files\Material as Data</Filter>
+    </ClInclude>
+    <ClInclude Include="LightHandle.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="LightType.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLightInspectorAdapter.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LightFactory.cpp">
-      <Filter>Source Files\Light</Filter>
-    </ClCompile>
-    <ClCompile Include="LightingSystem.cpp">
-      <Filter>Source Files\Light</Filter>
-    </ClCompile>
     <ClCompile Include="Application.cpp">
       <Filter>Source Files\Application</Filter>
-    </ClCompile>
-    <ClCompile Include="ShadowSystem.cpp">
-      <Filter>Source Files\Shadow</Filter>
-    </ClCompile>
-    <ClCompile Include="ShadowFactory.cpp">
-      <Filter>Source Files\Shadow</Filter>
     </ClCompile>
     <ClCompile Include="GLFWWindow.cpp">
       <Filter>Source Files\Window</Filter>
@@ -323,12 +275,27 @@
     <ClCompile Include="ConeInspectorAdapter.cpp">
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source Files\Material as Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLightInspectorAdapter.cpp">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="basic.vert">
       <Filter>Source Files\ShaderPrograms</Filter>
     </None>
     <None Include="basic.frag">
+      <Filter>Source Files\ShaderPrograms</Filter>
+    </None>
+    <None Include="pbr_base.frag">
+      <Filter>Source Files\ShaderPrograms</Filter>
+    </None>
+    <None Include="pbr.vert">
+      <Filter>Source Files\ShaderPrograms</Filter>
+    </None>
+    <None Include="pbr.frag">
       <Filter>Source Files\ShaderPrograms</Filter>
     </None>
   </ItemGroup>

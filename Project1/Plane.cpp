@@ -30,7 +30,8 @@ void Plane::Draw(Renderer& renderer) const {
 	//Do not assign hard coded value
 	//Draw function is being called every frame, so the value overrides
 	//For inspector based changes, 'color' must be mentioned not vec3 0.8
-	renderer.SetColor(color);
+	//renderer.SetColor(color);
+	renderer.ApplyMaterial(*GetMaterial());
 
 	mesh->Draw();
 }

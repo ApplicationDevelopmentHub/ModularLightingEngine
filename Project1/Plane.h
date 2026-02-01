@@ -2,6 +2,7 @@
 #include"Primitive.h"
 #include<memory>
 #include"Mesh.h"
+#include"Material.h"
 
 class Plane:public Primitive {
 public:
@@ -26,4 +27,6 @@ private:
 
 	// NEW: extracted mesh generation logic
 	void BuildMesh();
+
+	std::shared_ptr<Material> material;
 };

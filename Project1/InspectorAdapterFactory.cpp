@@ -17,45 +17,104 @@
 #include"BoxInspectorAdapter.h"
 #include"ConeInspectorAdapter.h"
 
+// Lights
+#include "DirectionalLightInspectorAdapter.h"
+//#include "PointLightInspectorAdapter.h"
+//#include "SpotLightInspectorAdapter.h"
+
 std::unique_ptr<IInspectorEditable>
 InspectorAdapterFactory::Create(Scene& scene, EditorContext& ctx)
 {
     // We only support primitive selection for now
-    if (ctx.GetSelectionType() != EditorContext::SelectionType::Primitive)
+    //if (ctx.GetSelectionType() != EditorContext::SelectionType::Primitive)
+    //    return nullptr;
+
+    //auto idOpt = ctx.GetSelectedPrimitive();
+    //if (!idOpt)
+    //    return nullptr;
+
+    //Primitive* primitive = scene.GetPrimitive(*idOpt);
+    //if (!primitive)
+    //    return nullptr;
+
+    //// ---- Plane ----
+    //if (auto* plane = dynamic_cast<Plane*>(primitive)) {
+    //    return std::make_unique<PlaneInspectorAdapter>(*plane, *idOpt);
+    //}
+
+    ////Sphere
+    //if (auto* sphere = dynamic_cast<Sphere*>(primitive)) {
+    //    return std::make_unique<SphereInspectorAdapter>(*sphere, *idOpt);
+    //}
+
+    ////Box
+    //if (auto* box = dynamic_cast<Box*>(primitive)) {
+    //    return std::make_unique<BoxInspectorAdapter>(*box, *idOpt);
+    //}
+
+    ////Cone
+    //if (auto* cone = dynamic_cast<Cone*>(primitive)) {
+    //    return std::make_unique<ConeInspectorAdapter>(*cone, *idOpt);
+    //}
+
+    //// ---- Future primitives ----
+    //// if (auto* box = dynamic_cast<Box*>(primitive)) {
+    ////     return std::make_unique<BoxInspectorAdapter>(*box);
+    //// }
+
+    ////LIGHTS
+
+    //return nullptr;
+
+    using SelectionType = EditorContext::SelectionType;
+
+    // =====================================================
+    // PRIMITIVES
+    // =====================================================
+    if (ctx.GetSelectionType() == SelectionType::Primitive) {
+
+        auto idOpt = ctx.GetSelectedPrimitive();
+        if (!idOpt)
+            return nullptr;
+
+        Primitive* primitive = scene.GetPrimitive(*idOpt);
+        if (!primitive)
+            return nullptr;
+
+        if (auto* plane = dynamic_cast<Plane*>(primitive)) {
+            return std::make_unique<PlaneInspectorAdapter>(*plane, *idOpt);
+        }
+
+        if (auto* sphere = dynamic_cast<Sphere*>(primitive)) {
+            return std::make_unique<SphereInspectorAdapter>(*sphere, *idOpt);
+        }
+
+        if (auto* box = dynamic_cast<Box*>(primitive)) {
+            return std::make_unique<BoxInspectorAdapter>(*box, *idOpt);
+        }
+
+        if (auto* cone = dynamic_cast<Cone*>(primitive)) {
+            return std::make_unique<ConeInspectorAdapter>(*cone, *idOpt);
+        }
+
         return nullptr;
-
-    auto idOpt = ctx.GetSelectedPrimitive();
-    if (!idOpt)
-        return nullptr;
-
-    Primitive* primitive = scene.GetPrimitive(*idOpt);
-    if (!primitive)
-        return nullptr;
-
-    // ---- Plane ----
-    if (auto* plane = dynamic_cast<Plane*>(primitive)) {
-        return std::make_unique<PlaneInspectorAdapter>(*plane, *idOpt);
     }
 
-    //Sphere
-    if (auto* sphere = dynamic_cast<Sphere*>(primitive)) {
-        return std::make_unique<SphereInspectorAdapter>(*sphere, *idOpt);
-    }
+    // =====================================================
+    // LIGHTS
+    // =====================================================
+    if (ctx.GetSelectionType() == EditorContext::SelectionType::Light) {
+        auto lightId = ctx.GetSelectedLight();
+        if (!lightId)
+            return nullptr;
 
-    //Box
-    if (auto* box = dynamic_cast<Box*>(primitive)) {
-        return std::make_unique<BoxInspectorAdapter>(*box, *idOpt);
+        if (scene.GetDirectionalLight(*lightId)) {
+            return std::make_unique<DirectionalLightInspectorAdapter>(
+                scene,
+                *lightId
+            );
+        }
     }
-
-    //Cone
-    if (auto* cone = dynamic_cast<Cone*>(primitive)) {
-        return std::make_unique<ConeInspectorAdapter>(*cone, *idOpt);
-    }
-
-    // ---- Future primitives ----
-    // if (auto* box = dynamic_cast<Box*>(primitive)) {
-    //     return std::make_unique<BoxInspectorAdapter>(*box);
-    // }
 
     return nullptr;
 }

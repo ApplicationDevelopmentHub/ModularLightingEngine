@@ -86,6 +86,11 @@ bool Application::Init() {
 		scene->RemovePrimitive(id);
 		};
 
+	//Create lights
+	ctx.CreateDirectionalLight = [this]() {
+		CreateDirectionalLight();
+		};
+
 	//----------LIGHTING SUBSYSTEM---------
 
 	//----------SHADOW SUBSYSTEM----------
@@ -180,18 +185,13 @@ PrimitiveHandle Application::CreateCone(float radius, float height, uint32_t sec
 }
 
 //LIGHTS
-LightHandle Application::AddLight(const Lightdata& dat) {
-
-	//ENABLE LATER
-	//return lightingSystem->AddLight(dat);
-	return 0;
-}
-void Application::RemoveLight(LightHandle id){
-
-	//ENABLE LATER
-	//lightingSystem->RemoveLight(id);
+LightHandle Application::CreateDirectionalLight()
+{
+	DirectionalLight light; // default values
+	return scene->AddDirectionalLight(light);
 }
 
+//LATENCY
 float Application::ComputeDeltaTime() {
 	double currentTime = glfwGetTime();
 	float deltaTime = static_cast<float>(currentTime - lastTime);

@@ -1,7 +1,5 @@
 #pragma once
-#include"LightingSystem.h"
-#include"LightData.h"
-#include"ShadowSystem.h"
+
 #include"IWindow.h"
 #include"GLFWWindow.h"
 #include<memory>
@@ -43,9 +41,8 @@ public:
 	PrimitiveHandle CreateCone(float radius, float height, uint32_t sectors);
 
 	//Lighting system based calls
-	LightHandle AddLight(const Lightdata& dat);
-	void RemoveLight(LightHandle id);
-	void ModifyLight(LightHandle id, const Lightdata& dat);
+	LightHandle CreateDirectionalLight();
+	
 private:
 	~Application() = default; //default destructor compiler generated
 	//std::unique_ptr<LightingSystem> lightingSystem;

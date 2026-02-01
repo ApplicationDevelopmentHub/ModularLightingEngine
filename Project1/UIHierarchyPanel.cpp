@@ -67,6 +67,7 @@ void UIHierarchyPanel::Draw(Scene& scene, EditorContext& ctx)
     ImGui::EndChild();
 
     // ================= LIGHTS (EMPTY FOR NOW) =================
+    // ================= LIGHTS =================
     ImGui::BeginChild(
         "Hierarchy_Lights",
         ImVec2(0.0f, lightsHeight),
@@ -76,10 +77,64 @@ void UIHierarchyPanel::Draw(Scene& scene, EditorContext& ctx)
     ImGui::TextUnformatted("Lights");
     ImGui::Separator();
 
-    ImGui::TextDisabled("No lights implemented");
+    bool hasLights = false;
+
+    // -------- Directional Lights --------
+    for (const auto& [id, light] : scene.GetDirectionalLights()) {
+        hasLights = true;
+
+        std::string label =
+            "Directional Light " + std::to_string(id.value);
+
+        bool selected =
+            ctx.GetSelectionType() == EditorContext::SelectionType::Light &&
+            ctx.GetSelectedLight().has_value() &&
+            ctx.GetSelectedLight()->value == id.value;
+
+        if (ImGui::Selectable(label.c_str(), selected)) {
+            ctx.SelectLight(id);
+        }
+    }
+
+    // -------- Point Lights --------
+    /*for (const auto& [id, light] : scene.GetPointLights()) {
+        hasLights = true;
+
+        std::string label =
+            "Point Light " + std::to_string(id.value);
+
+        bool selected =
+            ctx.GetSelectionType() == EditorContext::SelectionType::Light &&
+            ctx.GetSelectedLight().has_value() &&
+            ctx.GetSelectedLight()->value == id.value;
+
+        if (ImGui::Selectable(label.c_str(), selected)) {
+            ctx.SelectLight(id);
+        }
+    }*/
+
+    // -------- Spot Lights --------
+    /*for (const auto& [id, light] : scene.GetSpotLights()) {
+        hasLights = true;
+
+        std::string label =
+            "Spot Light " + std::to_string(id.value);
+
+        bool selected =
+            ctx.GetSelectionType() == EditorContext::SelectionType::Light &&
+            ctx.GetSelectedLight().has_value() &&
+            ctx.GetSelectedLight()->value == id.value;
+
+        if (ImGui::Selectable(label.c_str(), selected)) {
+            ctx.SelectLight(id);
+        }
+    }*/
+
+    if (!hasLights) {
+        ImGui::TextDisabled("No lights in scene");
+    }
 
     ImGui::EndChild();
-
     ImGui::End();
 }
 
