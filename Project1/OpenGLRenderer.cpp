@@ -1,4 +1,4 @@
-#include "OpenGLRenderer.h"
+﻿#include "OpenGLRenderer.h"
 #include "Scene.h"
 #include "Primitive.h"
 #include"Shader.h"
@@ -29,19 +29,39 @@ void OpenGLRenderer::Render(
     camera = &cam;
     for (const auto& [id, primitive] : scene.GetPrimitives()) {
 
+        /*shader->Bind();
+        primitive->Draw(*this);*/
+
+        //NEW
+        camera = &cam;
+
         shader->Bind();
 
-        /*glm::mat4 model = glm::mat4(1.0f);
+        // 1️⃣ Camera (needed for specular)
+        shader->SetVec3("uCamPos", camera->GetPosition());
 
-        glm::mat4 mvp =
-            camera.GetProjection() *
-            camera.GetView() *
-            model;
+        // 2️⃣ Directional light (THIS BLOCK GOES HERE)
+        bool lightBound = false;
+        for (const auto& [id, light] : scene.GetDirectionalLights())
+        {
+            if (!light.enabled) continue;
 
-        shader->SetMat4("uMVP", mvp);
-        shader->SetVec3("uColor", glm::vec3(0.8f));*/
+            shader->SetVec3("uLightDir", light.direction);
+            shader->SetVec3("uLightColor", light.color * light.intensity);
+            lightBound = true;
+            break;
+        }
 
-        primitive->Draw(*this);
+        if (!lightBound)
+        {
+            shader->SetVec3("uLightColor", glm::vec3(0.0f));
+        }
+
+        // 3️⃣ Draw primitives
+        for (const auto& [id, primitive] : scene.GetPrimitives())
+        {
+            primitive->Draw(*this);
+        }
     }
 }
 
@@ -58,6 +78,7 @@ void OpenGLRenderer::SetMVP(const glm::mat4& model) {
         model;
 
     shader->SetMat4("uMVP", mvp);
+    shader->SetMat4("uModel", model);
     //shader->SetVec3("uColor", glm::vec3(0.8f));
 }
 

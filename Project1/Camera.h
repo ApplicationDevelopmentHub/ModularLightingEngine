@@ -23,6 +23,7 @@ public:
 
 	void ResetCamera();
 
+	const glm::vec3& GetPosition() const { return position; }
 	glm::mat4 GetView() const;
 	glm::mat4 GetProjection() const;
 private:

@@ -3,6 +3,74 @@
   "WorkspaceRootPath": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:UIInspectorPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:UIInspectorPanel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLightInspectorAdapter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:DirectionalLightInspectorAdapter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIHierarchyPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:UIHierarchyPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\EditorContext.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:EditorContext.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\EditorContext.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:EditorContext.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:pbr.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\OpenGLRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:OpenGLRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:DirectionalLight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:pbr.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr_base.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:pbr_base.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\basic.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:basic.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIMenuPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:UIMenuPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,24 +79,8 @@
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:UIMenuPanel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\EditorContext.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:EditorContext.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\EditorContext.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:EditorContext.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIHierarchyPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:UIHierarchyPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -36,10 +88,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.44.35207\\INCLUDE\\MEMORY||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLightInspectorAdapter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:DirectionalLightInspectorAdapter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -50,24 +98,12 @@
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:DirectionalLightInspectorAdapter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:DirectionalLight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PlaneInspectorAdapter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:PlaneInspectorAdapter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:InspectorAdapterFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:UIInspectorPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIHierarchyPanel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -90,24 +126,8 @@
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:IInspectorEditable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:pbr.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\OpenGLRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:OpenGLRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:pbr.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\BoxInspectorAdapter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -166,10 +186,6 @@
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Primitive.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr_base.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:pbr_base.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\OpenGLRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:OpenGLRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -214,16 +230,8 @@
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:UILatencyPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\basic.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:basic.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\basic.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:basic.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:UIInspectorPanel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -265,20 +273,12 @@
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\CameraController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:CameraController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\CameraController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:CameraController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|solutionrelative:Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{390D940D-7D2C-48E3-8485-E84F91D1749C}|Project1.vcxproj|C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -307,32 +307,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Application.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.cpp",
-              "RelativeDocumentMoniker": "Application.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.cpp",
-              "RelativeToolTip": "Application.cpp",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAqwFsAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UIInspectorPanel.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.cpp",
+              "RelativeDocumentMoniker": "UIInspectorPanel.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.cpp",
+              "RelativeToolTip": "UIInspectorPanel.cpp",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAuwJ8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-17T09:07:05.25Z",
+              "WhenOpened": "2026-01-25T14:18:01.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InspectorAdapterFactory.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.cpp",
-              "RelativeDocumentMoniker": "InspectorAdapterFactory.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.cpp",
-              "RelativeToolTip": "InspectorAdapterFactory.cpp",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T05:57:48.778Z",
+              "DocumentIndex": 6,
+              "Title": "EditorContext.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\EditorContext.h",
+              "RelativeDocumentMoniker": "EditorContext.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\EditorContext.h",
+              "RelativeToolTip": "EditorContext.h",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-25T10:02:02.285Z",
               "EditorCaption": ""
             },
             {
@@ -343,20 +343,20 @@
               "RelativeDocumentMoniker": "EditorContext.cpp",
               "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\EditorContext.cpp",
               "RelativeToolTip": "EditorContext.cpp",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwCAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-25T14:34:24.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "UIHierarchyPanel.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIHierarchyPanel.cpp",
               "RelativeDocumentMoniker": "UIHierarchyPanel.cpp",
               "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIHierarchyPanel.cpp",
               "RelativeToolTip": "UIHierarchyPanel.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAuwIwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-26T04:32:19.62Z",
               "EditorCaption": ""
@@ -364,118 +364,118 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Application.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.h",
-              "RelativeDocumentMoniker": "Application.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.h",
-              "RelativeToolTip": "Application.h",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-17T09:02:36.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UIMenuPanel.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIMenuPanel.h",
-              "RelativeDocumentMoniker": "UIMenuPanel.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIMenuPanel.h",
-              "RelativeToolTip": "UIMenuPanel.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-19T03:11:57.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UIMenuPanel.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIMenuPanel.cpp",
-              "RelativeDocumentMoniker": "UIMenuPanel.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIMenuPanel.cpp",
-              "RelativeToolTip": "UIMenuPanel.cpp",
-              "ViewState": "AgIAABkAAAAAAAAAAAAawCoAAAANAAAAAAAAAA==",
+              "Title": "Scene.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.cpp",
+              "RelativeDocumentMoniker": "Scene.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.cpp",
+              "RelativeToolTip": "Scene.cpp",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAuwDQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-26T04:36:55.876Z",
+              "WhenOpened": "2026-01-24T04:51:41.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "memory",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "ViewState": "AgIAACEOAAAAAAAAAAAawDAOAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-18T10:53:51.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditorContext.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\EditorContext.h",
-              "RelativeDocumentMoniker": "EditorContext.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\EditorContext.h",
-              "RelativeToolTip": "EditorContext.h",
-              "ViewState": "AgIAABgAAAAAAAAAAAAqwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-25T10:02:02.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "DirectionalLightInspectorAdapter.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLightInspectorAdapter.cpp",
               "RelativeDocumentMoniker": "DirectionalLightInspectorAdapter.cpp",
               "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLightInspectorAdapter.cpp",
               "RelativeToolTip": "DirectionalLightInspectorAdapter.cpp",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwB8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-01T12:58:44.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Scene.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.h",
-              "RelativeDocumentMoniker": "Scene.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.h",
-              "RelativeToolTip": "Scene.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCEAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UIInspectorPanel.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.h",
+              "RelativeDocumentMoniker": "UIInspectorPanel.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.h",
+              "RelativeToolTip": "UIInspectorPanel.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-24T04:46:21.589Z",
+              "WhenOpened": "2026-01-19T03:12:25.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "pbr.frag",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr.frag",
+              "RelativeDocumentMoniker": "pbr.frag",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr.frag",
+              "RelativeToolTip": "pbr.frag",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAuwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-01T12:02:52.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Camera.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.h",
+              "RelativeDocumentMoniker": "Camera.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.h",
+              "RelativeToolTip": "Camera.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-25T05:02:01.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Camera.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.cpp",
+              "RelativeDocumentMoniker": "Camera.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.cpp",
+              "RelativeToolTip": "Camera.cpp",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAwwDkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-25T05:17:50.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "DirectionalLightInspectorAdapter.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLightInspectorAdapter.h",
-              "RelativeDocumentMoniker": "DirectionalLightInspectorAdapter.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLightInspectorAdapter.h",
-              "RelativeToolTip": "DirectionalLightInspectorAdapter.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-01T12:58:28.506Z",
+              "Title": "Shader.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Shader.cpp",
+              "RelativeDocumentMoniker": "Shader.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Shader.cpp",
+              "RelativeToolTip": "Shader.cpp",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-24T05:38:40.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OpenGLRenderer.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\OpenGLRenderer.cpp",
+              "RelativeDocumentMoniker": "OpenGLRenderer.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\OpenGLRenderer.cpp",
+              "RelativeToolTip": "OpenGLRenderer.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAAAuwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-24T05:20:05.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Scene.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.cpp",
-              "RelativeDocumentMoniker": "Scene.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.cpp",
-              "RelativeToolTip": "Scene.cpp",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAqwDEAAAARAAAAAAAAAA==",
+              "Title": "Application.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.cpp",
+              "RelativeDocumentMoniker": "Application.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.cpp",
+              "RelativeToolTip": "Application.cpp",
+              "ViewState": "AgIAALIAAAAAAAAAAAAuwMcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-24T04:51:41.727Z",
+              "WhenOpened": "2026-01-17T09:07:05.25Z",
               "EditorCaption": ""
             },
             {
@@ -486,7 +486,7 @@
               "RelativeDocumentMoniker": "DirectionalLight.h",
               "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLight.h",
               "RelativeToolTip": "DirectionalLight.h",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBIAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-01T12:33:39.691Z",
               "EditorCaption": ""
@@ -494,162 +494,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "PlaneInspectorAdapter.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PlaneInspectorAdapter.cpp",
-              "RelativeDocumentMoniker": "PlaneInspectorAdapter.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PlaneInspectorAdapter.cpp",
-              "RelativeToolTip": "PlaneInspectorAdapter.cpp",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAqwCQAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T05:31:59.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "InspectorAdapterFactory.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.h",
-              "RelativeDocumentMoniker": "InspectorAdapterFactory.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.h",
-              "RelativeToolTip": "InspectorAdapterFactory.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T05:57:35.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UIHierarchyPanel.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIHierarchyPanel.h",
-              "RelativeDocumentMoniker": "UIHierarchyPanel.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIHierarchyPanel.h",
-              "RelativeToolTip": "UIHierarchyPanel.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-19T03:12:13.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UIInspectorPanel.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.cpp",
-              "RelativeDocumentMoniker": "UIInspectorPanel.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.cpp",
-              "RelativeToolTip": "UIInspectorPanel.cpp",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAqwGIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-25T14:18:01.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "LightHandle.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\LightHandle.h",
-              "RelativeDocumentMoniker": "LightHandle.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\LightHandle.h",
-              "RelativeToolTip": "LightHandle.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-01T12:32:01.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "LightType.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\LightType.h",
-              "RelativeDocumentMoniker": "LightType.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\LightType.h",
-              "RelativeToolTip": "LightType.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-01T12:33:04.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PrimitiveHandle.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PrimitiveHandle.h",
-              "RelativeDocumentMoniker": "PrimitiveHandle.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PrimitiveHandle.h",
-              "RelativeToolTip": "PrimitiveHandle.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-24T03:50:40.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IInspectorEditable.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\IInspectorEditable.h",
-              "RelativeDocumentMoniker": "IInspectorEditable.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\IInspectorEditable.h",
-              "RelativeToolTip": "IInspectorEditable.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T05:27:56.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Shader.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Shader.cpp",
-              "RelativeDocumentMoniker": "Shader.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Shader.cpp",
-              "RelativeToolTip": "Shader.cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAqwE0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-24T05:38:40.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "pbr.frag",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr.frag",
-              "RelativeDocumentMoniker": "pbr.frag",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr.frag",
-              "RelativeToolTip": "pbr.frag",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-01T12:02:52.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "OpenGLRenderer.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\OpenGLRenderer.cpp",
-              "RelativeDocumentMoniker": "OpenGLRenderer.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\OpenGLRenderer.cpp",
-              "RelativeToolTip": "OpenGLRenderer.cpp",
-              "ViewState": "AgIAADsAAAAAAAAAAAAqwFIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-24T05:20:05.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "BoxInspectorAdapter.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\BoxInspectorAdapter.cpp",
-              "RelativeDocumentMoniker": "BoxInspectorAdapter.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\BoxInspectorAdapter.cpp",
-              "RelativeToolTip": "BoxInspectorAdapter.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAqwD0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T14:29:10.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
               "Title": "pbr.vert",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr.vert",
               "RelativeDocumentMoniker": "pbr.vert",
@@ -662,7 +506,214 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "pbr_base.frag",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr_base.frag",
+              "RelativeDocumentMoniker": "pbr_base.frag",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr_base.frag",
+              "RelativeToolTip": "pbr_base.frag",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-01T04:17:56.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "basic.vert",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\basic.vert",
+              "RelativeDocumentMoniker": "basic.vert",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\basic.vert",
+              "RelativeToolTip": "basic.vert",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-24T05:40:12.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UIMenuPanel.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIMenuPanel.cpp",
+              "RelativeDocumentMoniker": "UIMenuPanel.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIMenuPanel.cpp",
+              "RelativeToolTip": "UIMenuPanel.cpp",
+              "ViewState": "AgIAABkAAAAAAAAAAAAawCoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-26T04:36:55.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UIMenuPanel.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIMenuPanel.h",
+              "RelativeDocumentMoniker": "UIMenuPanel.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIMenuPanel.h",
+              "RelativeToolTip": "UIMenuPanel.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-19T03:11:57.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Application.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.h",
+              "RelativeDocumentMoniker": "Application.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Application.h",
+              "RelativeToolTip": "Application.h",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T09:02:36.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InspectorAdapterFactory.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.cpp",
+              "RelativeDocumentMoniker": "InspectorAdapterFactory.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.cpp",
+              "RelativeToolTip": "InspectorAdapterFactory.cpp",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-31T05:57:48.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "memory",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
+              "ViewState": "AgIAACEOAAAAAAAAAAAawDAOAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-18T10:53:51.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Scene.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.h",
+              "RelativeDocumentMoniker": "Scene.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Scene.h",
+              "RelativeToolTip": "Scene.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-24T04:46:21.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DirectionalLightInspectorAdapter.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLightInspectorAdapter.h",
+              "RelativeDocumentMoniker": "DirectionalLightInspectorAdapter.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\DirectionalLightInspectorAdapter.h",
+              "RelativeToolTip": "DirectionalLightInspectorAdapter.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-01T12:58:28.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PlaneInspectorAdapter.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PlaneInspectorAdapter.cpp",
+              "RelativeDocumentMoniker": "PlaneInspectorAdapter.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PlaneInspectorAdapter.cpp",
+              "RelativeToolTip": "PlaneInspectorAdapter.cpp",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAqwCQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-31T05:31:59.445Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "InspectorAdapterFactory.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.h",
+              "RelativeDocumentMoniker": "InspectorAdapterFactory.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\InspectorAdapterFactory.h",
+              "RelativeToolTip": "InspectorAdapterFactory.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-31T05:57:35.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UIHierarchyPanel.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIHierarchyPanel.h",
+              "RelativeDocumentMoniker": "UIHierarchyPanel.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIHierarchyPanel.h",
+              "RelativeToolTip": "UIHierarchyPanel.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-19T03:12:13.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LightHandle.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\LightHandle.h",
+              "RelativeDocumentMoniker": "LightHandle.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\LightHandle.h",
+              "RelativeToolTip": "LightHandle.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-01T12:32:01.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LightType.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\LightType.h",
+              "RelativeDocumentMoniker": "LightType.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\LightType.h",
+              "RelativeToolTip": "LightType.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-01T12:33:04.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PrimitiveHandle.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PrimitiveHandle.h",
+              "RelativeDocumentMoniker": "PrimitiveHandle.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PrimitiveHandle.h",
+              "RelativeToolTip": "PrimitiveHandle.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-24T03:50:40.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IInspectorEditable.h",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\IInspectorEditable.h",
+              "RelativeDocumentMoniker": "IInspectorEditable.h",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\IInspectorEditable.h",
+              "RelativeToolTip": "IInspectorEditable.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-31T05:27:56.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BoxInspectorAdapter.cpp",
+              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\BoxInspectorAdapter.cpp",
+              "RelativeDocumentMoniker": "BoxInspectorAdapter.cpp",
+              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\BoxInspectorAdapter.cpp",
+              "RelativeToolTip": "BoxInspectorAdapter.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwD0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-31T14:29:10.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "Shader.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Shader.h",
               "RelativeDocumentMoniker": "Shader.h",
@@ -670,12 +721,11 @@
               "RelativeToolTip": "Shader.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAawBEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-24T05:36:39.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-24T05:36:39.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "ConeInspectorAdapter.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\ConeInspectorAdapter.cpp",
               "RelativeDocumentMoniker": "ConeInspectorAdapter.cpp",
@@ -683,12 +733,11 @@
               "RelativeToolTip": "ConeInspectorAdapter.cpp",
               "ViewState": "AgIAADUAAAAAAAAAAAAqwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T14:29:50.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T14:29:50.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "ConeInspectorAdapter.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\ConeInspectorAdapter.h",
               "RelativeDocumentMoniker": "ConeInspectorAdapter.h",
@@ -696,12 +745,11 @@
               "RelativeToolTip": "ConeInspectorAdapter.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T14:29:33.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T14:29:33.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "SphereInspectorAdapter.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\SphereInspectorAdapter.cpp",
               "RelativeDocumentMoniker": "SphereInspectorAdapter.cpp",
@@ -709,12 +757,11 @@
               "RelativeToolTip": "SphereInspectorAdapter.cpp",
               "ViewState": "AgIAADIAAAAAAAAAAAAqwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-31T07:51:11.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T07:51:11.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "BoxInspectorAdapter.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\BoxInspectorAdapter.h",
               "RelativeDocumentMoniker": "BoxInspectorAdapter.h",
@@ -722,12 +769,11 @@
               "RelativeToolTip": "BoxInspectorAdapter.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-31T14:28:57.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T14:28:57.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "Box.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Box.h",
               "RelativeDocumentMoniker": "Box.h",
@@ -735,12 +781,11 @@
               "RelativeToolTip": "Box.h",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-30T05:19:39.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T05:19:39.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "Material.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Material.h",
               "RelativeDocumentMoniker": "Material.h",
@@ -748,12 +793,11 @@
               "RelativeToolTip": "Material.h",
               "ViewState": "AgIAABIAAAAAAAAAAAAqwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-01T04:04:10.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-01T04:04:10.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "Sphere.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Sphere.cpp",
               "RelativeDocumentMoniker": "Sphere.cpp",
@@ -761,12 +805,11 @@
               "RelativeToolTip": "Sphere.cpp",
               "ViewState": "AgIAADkAAAAAAAAAAAAAAEoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-26T04:54:55.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T04:54:55.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "Plane.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Plane.cpp",
               "RelativeDocumentMoniker": "Plane.cpp",
@@ -778,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "Cone.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Cone.cpp",
               "RelativeDocumentMoniker": "Cone.cpp",
@@ -790,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "Renderer.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Renderer.h",
               "RelativeDocumentMoniker": "Renderer.h",
@@ -802,7 +845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "Box.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Box.cpp",
               "RelativeDocumentMoniker": "Box.cpp",
@@ -814,7 +857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 44,
               "Title": "Material.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Material.cpp",
               "RelativeDocumentMoniker": "Material.cpp",
@@ -826,7 +869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "Primitive.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Primitive.h",
               "RelativeDocumentMoniker": "Primitive.h",
@@ -838,19 +881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "pbr_base.frag",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr_base.frag",
-              "RelativeDocumentMoniker": "pbr_base.frag",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\pbr_base.frag",
-              "RelativeToolTip": "pbr_base.frag",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-01T04:17:56.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "OpenGLRenderer.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\OpenGLRenderer.h",
               "RelativeDocumentMoniker": "OpenGLRenderer.h",
@@ -862,7 +893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "Cone.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Cone.h",
               "RelativeDocumentMoniker": "Cone.h",
@@ -874,7 +905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "Sphere.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Sphere.h",
               "RelativeDocumentMoniker": "Sphere.h",
@@ -886,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "Plane.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Plane.h",
               "RelativeDocumentMoniker": "Plane.h",
@@ -898,7 +929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "PlaneInspectorAdapter.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PlaneInspectorAdapter.h",
               "RelativeDocumentMoniker": "PlaneInspectorAdapter.h",
@@ -910,7 +941,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "SphereInspectorAdapter.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\SphereInspectorAdapter.h",
               "RelativeDocumentMoniker": "SphereInspectorAdapter.h",
@@ -922,7 +953,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "Mesh.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Mesh.cpp",
               "RelativeDocumentMoniker": "Mesh.cpp",
@@ -934,7 +965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "PrimitiveFactory.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PrimitiveFactory.cpp",
               "RelativeDocumentMoniker": "PrimitiveFactory.cpp",
@@ -946,7 +977,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "PrimitiveFactory.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\PrimitiveFactory.h",
               "RelativeDocumentMoniker": "PrimitiveFactory.h",
@@ -958,7 +989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "UISystem.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UISystem.cpp",
               "RelativeDocumentMoniker": "UISystem.cpp",
@@ -970,7 +1001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 56,
               "Title": "UILatencyPanel.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UILatencyPanel.cpp",
               "RelativeDocumentMoniker": "UILatencyPanel.cpp",
@@ -982,19 +1013,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "basic.vert",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\basic.vert",
-              "RelativeDocumentMoniker": "basic.vert",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\basic.vert",
-              "RelativeToolTip": "basic.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-24T05:40:12.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "basic.frag",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\basic.frag",
               "RelativeDocumentMoniker": "basic.frag",
@@ -1006,19 +1025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "UIInspectorPanel.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.h",
-              "RelativeDocumentMoniker": "UIInspectorPanel.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIInspectorPanel.h",
-              "RelativeToolTip": "UIInspectorPanel.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-19T03:12:25.392Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "Mesh.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Mesh.h",
               "RelativeDocumentMoniker": "Mesh.h",
@@ -1030,7 +1037,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "xmemory",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmemory",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmemory",
@@ -1042,7 +1049,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "UIPanel.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UIPanel.h",
               "RelativeDocumentMoniker": "UIPanel.h",
@@ -1054,7 +1061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "UILatencyPanel.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UILatencyPanel.h",
               "RelativeDocumentMoniker": "UILatencyPanel.h",
@@ -1066,7 +1073,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "FrameTimingHistory.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\FrameTimingHistory.cpp",
               "RelativeDocumentMoniker": "FrameTimingHistory.cpp",
@@ -1078,7 +1085,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "FrameTimingHistory.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\FrameTimingHistory.h",
               "RelativeDocumentMoniker": "FrameTimingHistory.h",
@@ -1090,7 +1097,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "GLFWWindow.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\GLFWWindow.cpp",
               "RelativeDocumentMoniker": "GLFWWindow.cpp",
@@ -1102,7 +1109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "UISystem.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\UISystem.h",
               "RelativeDocumentMoniker": "UISystem.h",
@@ -1114,7 +1121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "glew.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\lib\\GLEW\\include\\GL\\glew.h",
               "RelativeDocumentMoniker": "lib\\GLEW\\include\\GL\\glew.h",
@@ -1126,7 +1133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "Input.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Input.cpp",
               "RelativeDocumentMoniker": "Input.cpp",
@@ -1139,18 +1146,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 69,
-              "Title": "Camera.h",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.h",
-              "RelativeDocumentMoniker": "Camera.h",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.h",
-              "RelativeToolTip": "Camera.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-25T05:02:01.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
               "Title": "CameraController.h",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\CameraController.h",
               "RelativeDocumentMoniker": "CameraController.h",
@@ -1162,7 +1157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "CameraController.cpp",
               "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\CameraController.cpp",
               "RelativeDocumentMoniker": "CameraController.cpp",
@@ -1183,18 +1178,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-25T06:44:55.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "Camera.cpp",
-              "DocumentMoniker": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.cpp",
-              "RelativeDocumentMoniker": "Camera.cpp",
-              "ToolTip": "C:\\Users\\anupa\\Desktop\\Base\\DevProjects\\RenderingEngine\\ModularLightingEngine\\Project1\\Camera.cpp",
-              "RelativeToolTip": "Camera.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-25T05:17:50.134Z"
             },
             {
               "$type": "Document",

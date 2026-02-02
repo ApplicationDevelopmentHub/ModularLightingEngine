@@ -44,21 +44,61 @@ void UIInspectorPanel::Draw(Scene& scene, EditorContext& ctx)
     static std::unique_ptr<IInspectorEditable> adapter;
     static EditorContext::SelectionType lastType =
         EditorContext::SelectionType::None;
-    static PrimitiveHandle lastId{}; // value = 0
+
+    static PrimitiveHandle lastPrimitiveId{};
+    static LightHandle     lastLightId{};
+
+    //static PrimitiveHandle lastId{}; // value = 0
 
     const auto currentType = ctx.GetSelectionType();
-    const auto currentId   = ctx.GetSelectedPrimitive();
+    //const auto currentId   = ctx.GetSelectedPrimitive();
 
-    const bool selectionChanged =
+    bool selectionChanged = (currentType != lastType);
+
+   /* const bool selectionChanged =
         currentType != lastType ||
         currentId.has_value() != (lastId.value != 0) ||
-        (currentId.has_value() && currentId->value != lastId.value);
+        (currentId.has_value() && currentId->value != lastId.value);*/
 
-    if (selectionChanged) {
+    /*if (selectionChanged) {
         adapter = InspectorAdapterFactory::Create(scene, ctx);
         lastType = currentType;
         lastId   = currentId.value_or(PrimitiveHandle{});
+    }*/
+
+    if (!selectionChanged)
+    {
+        if (currentType == EditorContext::SelectionType::Primitive)
+        {
+            auto cur = ctx.GetSelectedPrimitive();
+            if (!cur || cur->value != lastPrimitiveId.value)
+                selectionChanged = true;
+        }
+        else if (currentType == EditorContext::SelectionType::Light)
+        {
+            auto cur = ctx.GetSelectedLight();
+            if (!cur || cur->value != lastLightId.value)
+                selectionChanged = true;
+        }
     }
+
+    if (selectionChanged)
+    {
+        adapter = InspectorAdapterFactory::Create(scene, ctx);
+        lastType = currentType;
+
+        if (currentType == EditorContext::SelectionType::Primitive)
+        {
+            lastPrimitiveId =
+                ctx.GetSelectedPrimitive().value_or(PrimitiveHandle{});
+        }
+        else if (currentType == EditorContext::SelectionType::Light)
+        {
+            lastLightId =
+                ctx.GetSelectedLight().value_or(LightHandle{});
+        }
+    }
+
 
     // ------------------------------------------------------------
     // Draw inspector contents
@@ -81,17 +121,38 @@ void UIInspectorPanel::Draw(Scene& scene, EditorContext& ctx)
             adapter->ApplyChanges();
         }
     }*/
-    if (adapter->WantsDelete()) {
-        auto id = ctx.GetSelectedPrimitive();
-        if (id && ctx.DeleteSelectedPrimitive) {
-            ctx.DeleteSelectedPrimitive(*id);
+    //if (adapter->WantsDelete()) {
+    //    auto id = ctx.GetSelectedPrimitive();
+    //    if (id && ctx.DeleteSelectedPrimitive) {
+    //        ctx.DeleteSelectedPrimitive(*id);
+    //    }
+
+    //    ctx.ClearSelection();
+    //    adapter.reset();
+
+    //    ImGui::End();
+    //    return; // IMPORTANT: stop drawing this frame
+    //}
+    if (adapter->WantsDelete())
+    {
+        if (ctx.GetSelectionType() == EditorContext::SelectionType::Primitive)
+        {
+            auto id = ctx.GetSelectedPrimitive();
+            if (id && ctx.DeleteSelectedPrimitive)
+                ctx.DeleteSelectedPrimitive(*id);
+        }
+        else if (ctx.GetSelectionType() == EditorContext::SelectionType::Light)
+        {
+            auto id = ctx.GetSelectedLight();
+            if (id && ctx.DeleteSelectedLight)
+                ctx.DeleteSelectedLight(*id);
         }
 
         ctx.ClearSelection();
         adapter.reset();
 
         ImGui::End();
-        return; // IMPORTANT: stop drawing this frame
+        return;
     }
 
     ImGui::End();

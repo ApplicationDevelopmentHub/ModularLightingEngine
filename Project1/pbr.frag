@@ -74,9 +74,12 @@ void main()
     vec3 F0 = vec3(0.04);
     F0 = mix(F0, uAlbedo, uMetallic);
 
+    float roughness = clamp(uRoughness, 0.04, 1.0);
+
+
     // Cook-Torrance BRDF
-    float NDF = DistributionGGX(N, H, uRoughness);
-    float G   = GeometrySmith(N, V, L, uRoughness);
+    float NDF = DistributionGGX(N, H, roughness);
+    float G   = GeometrySmith(N, V, L, roughness);
     vec3  F   = FresnelSchlick(max(dot(H, V), 0.0), F0);
 
     vec3 numerator    = NDF * G * F;
