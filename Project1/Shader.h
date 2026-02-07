@@ -3,6 +3,7 @@
 #include<string>
 #include<iostream>
 #include<vector>
+#include <GL/glew.h>
 
 class Shader {
 public:
@@ -16,6 +17,7 @@ public:
 	void SetFloat(const std::string& name, float value);
 	void SetVec3(const std::string& name, const glm::vec3& value);
 	void SetMat4(const std::string& name, const glm::mat4& value);
+	GLuint GetProgram() const { return program; }
 
 private:
 	unsigned program;

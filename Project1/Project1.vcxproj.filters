@@ -289,9 +289,6 @@
     <None Include="pbr.frag">
       <Filter>Source Files\ShaderPrograms</Filter>
     </None>
-    <None Include="pbr1.vert">
-      <Filter>Source Files\ShaderPrograms</Filter>
-    </None>
     <None Include="pbr2.frag">
       <Filter>Source Files\ShaderPrograms</Filter>
     </None>

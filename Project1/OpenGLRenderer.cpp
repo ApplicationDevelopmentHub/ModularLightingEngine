@@ -13,8 +13,39 @@
 OpenGLRenderer::OpenGLRenderer() {
 	shader = std::make_unique<Shader>(
 		"pbr.vert",
-		"pbr.frag"
+		"pbr2.frag"
 	);
+
+    //UBO init
+    // Create UBO
+    glGenBuffers(1, &lightUBO);
+    glBindBuffer(GL_UNIFORM_BUFFER, lightUBO);
+
+    // Allocate enough memory
+    size_t blockSize =
+        sizeof(int) * 4 +                 // 4 ints (std140 alignment)
+        sizeof(glm::vec4) * MAX_DIR_LIGHTS * 2; // directions + colors
+
+    glBufferData(GL_UNIFORM_BUFFER, blockSize, nullptr, GL_DYNAMIC_DRAW);
+
+    // Bind to binding point 0
+    glBindBufferBase(GL_UNIFORM_BUFFER, 0, lightUBO);
+
+    // Connect shader block to binding point 0
+    GLuint blockIndex =
+        glGetUniformBlockIndex(shader->GetProgram(), "LightBlock");
+
+    if (blockIndex == GL_INVALID_INDEX)
+    {
+        std::cerr << "LightBlock not found in shader!\n";
+    }
+    else
+    {
+        glUniformBlockBinding(shader->GetProgram(), blockIndex, 0);
+    }
+
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
 }
 
 void OpenGLRenderer::BeginFrame() {
@@ -23,41 +54,61 @@ void OpenGLRenderer::BeginFrame() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
-void OpenGLRenderer::Render(
-    const Scene& scene,
-    const Camera& cam
-) {
+void OpenGLRenderer::Render(const Scene& scene, const Camera& cam)
+{
     camera = &cam;
-    for (const auto& [id, primitive] : scene.GetPrimitives()) {
-        camera = &cam;
-        shader->Bind();
-        // 1️⃣ Camera (needed for specular)
-        shader->SetVec3("uCamPos", camera->GetPosition());
 
-        // 2️⃣ Directional light (THIS BLOCK GOES HERE)
-        bool lightBound = false;
-        for (const auto& [id, light] : scene.GetDirectionalLights())
-        {
-            if (!light.enabled) continue;
+    // ------------------------------------------------
+    // 1️⃣ Upload UBO once per frame
+    // ------------------------------------------------
+    glBindBuffer(GL_UNIFORM_BUFFER, lightUBO);
 
-            shader->SetVec3("uLightDir", light.direction);
-            shader->SetVec3("uLightColor", light.color * light.intensity);
-            lightBound = true;
-            break;
-        }
+    struct LightBlockCPU
+    {
+        int dirCount;
+        int pointCount;
+        int spotCount;
+        float pad0;
 
-        if (!lightBound)
-        {
-            shader->SetVec3("uLightColor", glm::vec3(0.0f));
-        }
+        glm::vec4 dirDirections[MAX_DIR_LIGHTS];
+        glm::vec4 dirColors[MAX_DIR_LIGHTS];
+    };
 
-        // 3️⃣ Draw primitives
-        for (const auto& [id, primitive] : scene.GetPrimitives())
-        {
-            primitive->Draw(*this);
-        }
+    LightBlockCPU block{};
+    block.dirCount = 0;
+
+    for (const auto& [id, light] : scene.GetDirectionalLights())
+    {
+        if (!light.enabled) continue;
+        if (block.dirCount >= MAX_DIR_LIGHTS) break;
+
+        block.dirDirections[block.dirCount] =
+            glm::vec4(glm::normalize(light.direction), 0.0f);
+
+        block.dirColors[block.dirCount] =
+            glm::vec4(light.color * light.intensity, 0.0f);
+
+        block.dirCount++;
+    }
+
+    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(LightBlockCPU), &block);
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
+    // ------------------------------------------------
+    // 2️⃣ Bind shader ONCE
+    // ------------------------------------------------
+    shader->Bind();
+    shader->SetVec3("uCamPos", camera->GetPosition());
+
+    // ------------------------------------------------
+    // 3️⃣ Draw primitives ONCE
+    // ------------------------------------------------
+    for (const auto& [id, primitive] : scene.GetPrimitives())
+    {
+        primitive->Draw(*this);
     }
 }
+
 
 void OpenGLRenderer::EndFrame() {
 	// nothing yet
