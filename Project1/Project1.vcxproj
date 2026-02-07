@@ -203,11 +203,10 @@
     <ClCompile Include="UISystem.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="basic.frag" />
-    <None Include="basic.vert" />
     <None Include="pbr.frag" />
     <None Include="pbr.vert" />
-    <None Include="pbr_base.frag" />
+    <None Include="pbr1.vert" />
+    <None Include="pbr2.frag" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

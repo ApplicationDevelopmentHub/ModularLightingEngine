@@ -283,19 +283,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="basic.vert">
-      <Filter>Source Files\ShaderPrograms</Filter>
-    </None>
-    <None Include="basic.frag">
-      <Filter>Source Files\ShaderPrograms</Filter>
-    </None>
-    <None Include="pbr_base.frag">
-      <Filter>Source Files\ShaderPrograms</Filter>
-    </None>
     <None Include="pbr.vert">
       <Filter>Source Files\ShaderPrograms</Filter>
     </None>
     <None Include="pbr.frag">
+      <Filter>Source Files\ShaderPrograms</Filter>
+    </None>
+    <None Include="pbr1.vert">
+      <Filter>Source Files\ShaderPrograms</Filter>
+    </None>
+    <None Include="pbr2.frag">
       <Filter>Source Files\ShaderPrograms</Filter>
     </None>
   </ItemGroup>

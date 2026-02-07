@@ -7,6 +7,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+//OpenGL Renderer constructor
 //What shader to use? Fetch using path
 //Path fetching is defined in Shader program
 OpenGLRenderer::OpenGLRenderer() {
@@ -28,15 +29,8 @@ void OpenGLRenderer::Render(
 ) {
     camera = &cam;
     for (const auto& [id, primitive] : scene.GetPrimitives()) {
-
-        /*shader->Bind();
-        primitive->Draw(*this);*/
-
-        //NEW
         camera = &cam;
-
         shader->Bind();
-
         // 1️⃣ Camera (needed for specular)
         shader->SetVec3("uCamPos", camera->GetPosition());
 

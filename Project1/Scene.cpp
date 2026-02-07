@@ -49,5 +49,5 @@ DirectionalLight* Scene::GetDirectionalLight(LightHandle id) {
 	if (it == directionalLights.end())
 		return nullptr;
 
-	return &it->second; // ✅ address of value
+	return &it->second;
 }

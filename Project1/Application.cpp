@@ -7,23 +7,27 @@
 //Create objects of all subsystems using make_unique
 //If any sub system init fails, return false: does not start application
 bool Application::Init() {
+
 	std::cout << "App facade init." << std::endl;
-	//----------GLFW WINDOW SUBSYSTEM-----
+
+	//GLFW WINDOW SUBSYSTEM
+
 	window = std::make_unique<GLFWWindow>();
 	if (!window->Create(1920, 1080, "Real Time Lighting Engine")) {
 		return false;
 	}
 	std::cout << "Glfw init success." << std::endl;
 
-	//---------KEYBOARD INPUT SUBSYSTEM----------------
+	//KEYBOARD INPUT SUBSYSTEM
+
 	Input::Init(
 		static_cast<GLFWwindow*>(window->GetNativeHandle())
 	);
 
-	//---------OPENGL LOADER-----------------
-	//Whoever creates the OpenGL context is responsible
-	// for initializing the OpenGL function loader.
-	//GLFW is created here
+	//OPENGL LOADER
+	// OpenGL is init at same place as GLFW
+	// Agency creating OpenGL context responsible for OpenGL function loader
+
 	glewExperimental = GL_TRUE;
 	if (glewInit() != GLEW_OK) {
 		std::cerr << "Failed to initialize GLEW\n";
@@ -31,22 +35,24 @@ bool Application::Init() {
 	}
 	std::cout << "Glew init success." << std::endl;
 
-	//---------TIME INITIALIZATION-------------
+	//TIME INITIALIZATION FOR LATENCY AND OTHER USE
+
 	lastTime = glfwGetTime();
 
-	//-----------SCENE SUBSYSTEM-----------
+	//SCENE SUBSYSTEM
+
 	scene = std::make_unique<Scene>();
 
-	//----------OPENGL RENDERER SUBSYSTEM-----
+	//OPENGL RENDERER SUBSYSTEM
 	renderer = std::make_unique<OpenGLRenderer>();
 
-	//--------CAMERA SUBSYSTEM OWNED BY RENDERER-----------
+	//CAMERA SUBSYSTEM OWNED BY RENDERER
 	float aspect = 1920.0f / 1080.0f;
-	camera = std::make_unique<Camera>(aspect);
-
+	camera = std::make_unique<Camera>(aspect); //renderer can directly use this camera as a function parameter
 	cameraController = std::make_unique<CameraController>(*camera);
 
-	//---------IMGUI SUBSYSTEM----------------
+	//IMGUI SUBSYSTEM
+
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGui::StyleColorsDark();
@@ -66,44 +72,37 @@ bool Application::Init() {
 	uiSystem->AddPanel(std::make_unique<UILatencyPanel>(frameTimingHistory,120.0f)); //below inspector
 		
 	//EDITOR CONTEXT: COMMAND PATTERN
-	EditorContext& ctx = uiSystem->GetEditorContext();
 
-	//Create primitives
-	ctx.CreateSphere = [this]() {
+	EditorContext& ctx = uiSystem->GetEditorContext();
+	ctx.CreateSphere = [this]() { //create sphere primitive
 		CreateSphere(1.0f, 32, 64);
 		};
 
-	ctx.CreateBox = [this]() {
+	ctx.CreateBox = [this]() { //create box primitive
 		CreateBox(1.0f, 1.0f, 1.0f);
 		};
 
-	ctx.CreateCone = [this]() {
+	ctx.CreateCone = [this]() { //create cone primitive
 		CreateCone(1.0f, 1.5f, 32.0f);
 		};
 
-	//Delete primitives
-	ctx.DeleteSelectedPrimitive = [this](PrimitiveHandle id) {
+	ctx.DeleteSelectedPrimitive = [this](PrimitiveHandle id) { //Delete any primitive
 		scene->RemovePrimitive(id);
 		};
 
-	//Create lights
-	ctx.CreateDirectionalLight = [this]() {
+	ctx.CreateDirectionalLight = [this]() { //create directional light
 		CreateDirectionalLight();
 		};
 
-	//----------LIGHTING SUBSYSTEM---------
+	ctx.DeleteSelectedLight = [this](LightHandle id) {
+		scene->RemoveLight(id);
+		};
 
-	//----------SHADOW SUBSYSTEM----------
-
-	//-----------SUBSCRIBE OBSERVERS--------
-	//Shadow subscribe to Light
-
-	//UI subscriptions: IMgui
-
-	//-------ENVIRONMENT: PLANE--------------
+	//CREATE FUNDAMENTAL PLANE
 	CreatePlane(8.0f);
 
-	//---------SUCCESS-----------------------
+	//FACADE SUCCESS
+	std::cout << "All susbystems successfully init." << std::endl;
 	running = true;
 	return true;
 }

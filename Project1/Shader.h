@@ -1,6 +1,8 @@
 #pragma once
 #include<glm/glm.hpp>
 #include<string>
+#include<iostream>
+#include<vector>
 
 class Shader {
 public:
