@@ -26,16 +26,12 @@ void Scene::RemovePrimitive(PrimitiveHandle id) {
 }
 
 //LIGHTS
+//Directional light
 LightHandle Scene::AddDirectionalLight(const DirectionalLight& light)
 {
 	LightHandle id{ nextLightId.value++ };
 	directionalLights[id] = light;
 	return id;
-}
-
-void Scene::RemoveLight(LightHandle id)
-{
-	directionalLights.erase(id);
 }
 
 const std::unordered_map<LightHandle, DirectionalLight>&
@@ -50,4 +46,31 @@ DirectionalLight* Scene::GetDirectionalLight(LightHandle id) {
 		return nullptr;
 
 	return &it->second;
+}
+
+//Spot light
+LightHandle Scene::AddSpotLight(const SpotLight& light) {
+	LightHandle id{ nextLightId.value++ };
+	spotLights[id] = light;
+	return id;
+}
+
+SpotLight* Scene::GetSpotLight(LightHandle id) {
+	auto it = spotLights.find(id);
+	if (it == spotLights.end())
+		return nullptr;
+
+	return &it->second;
+}
+
+const std::unordered_map<LightHandle, SpotLight>& Scene::GetSpotLights() const {
+	return spotLights;
+}
+
+
+//Remove any light by id
+void Scene::RemoveLight(LightHandle id)
+{
+	directionalLights.erase(id);
+	spotLights.erase(id);
 }

@@ -5,6 +5,7 @@
 #include<memory>
 #include"Primitive.h"
 #include"DirectionalLight.h"
+#include"SpotLight.h"
 
 class Scene {
 public:
@@ -19,11 +20,20 @@ public:
 	void RemovePrimitive(PrimitiveHandle id);
 
 	//LIGHTS
+
+	//Directional light
 	LightHandle AddDirectionalLight(const DirectionalLight& light);
-	void RemoveLight(LightHandle id);
 	DirectionalLight* GetDirectionalLight(LightHandle id);
 	const std::unordered_map<LightHandle, DirectionalLight>&
 		GetDirectionalLights() const;
+
+	//Spot light
+	LightHandle AddSpotLight(const SpotLight& light);
+	SpotLight* GetSpotLight(LightHandle id);
+	const std::unordered_map<LightHandle, SpotLight>& GetSpotLights() const;
+
+	//Remove any light by id
+	void RemoveLight(LightHandle id);
 
 private:
 	//PRIMITIVES
@@ -33,6 +43,6 @@ private:
 	//LIGHTS
 	LightHandle     nextLightId{ 1 };
 	std::unordered_map<LightHandle, DirectionalLight> directionalLights;
-	/*std::unordered_map<LightHandle, PointLight>       pointLights;
-	std::unordered_map<LightHandle, SpotLight>        spotLights;*/
+	//std::unordered_map<LightHandle, PointLight>       pointLights;
+	std::unordered_map<LightHandle, SpotLight>        spotLights;
 };

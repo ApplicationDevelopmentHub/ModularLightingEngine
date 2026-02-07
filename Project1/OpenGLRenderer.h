@@ -23,7 +23,8 @@ private:
 	std::unique_ptr<Shader> shader;
 	const Camera* camera = nullptr;
 
-	static constexpr uint32_t MAX_DIR_LIGHTS = 16;
+	static constexpr uint32_t MAX_DIR_LIGHTS = 10;
+	static constexpr uint32_t MAX_SPOT_LIGHTS = 10;
 
 	GLuint lightUBO = 0;
 };

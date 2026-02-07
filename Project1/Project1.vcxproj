@@ -158,6 +158,8 @@
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="SphereInspectorAdapter.h" />
+    <ClInclude Include="SpotLight.h" />
+    <ClInclude Include="SpotLightInspectorAdapter.h" />
     <ClInclude Include="UIHierarchyPanel.h" />
     <ClInclude Include="UIInspectorPanel.h" />
     <ClInclude Include="UILatencyPanel.h" />
@@ -196,6 +198,7 @@
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="SphereInspectorAdapter.cpp" />
+    <ClCompile Include="SpotLightInspectorAdapter.cpp" />
     <ClCompile Include="UIHierarchyPanel.cpp" />
     <ClCompile Include="UIInspectorPanel.cpp" />
     <ClCompile Include="UILatencyPanel.cpp" />

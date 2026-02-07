@@ -10,28 +10,57 @@
 //OpenGL Renderer constructor
 //What shader to use? Fetch using path
 //Path fetching is defined in Shader program
-OpenGLRenderer::OpenGLRenderer() {
-	shader = std::make_unique<Shader>(
-		"pbr.vert",
-		"pbr2.frag"
-	);
+OpenGLRenderer::OpenGLRenderer()
+{
+    shader = std::make_unique<Shader>(
+        "pbr.vert",
+        "pbr2.frag"
+    );
 
-    //UBO init
+    // ------------------------------------------------
+    // Validate shader program
+    // ------------------------------------------------
+    if (!shader || shader->GetProgram() == 0)
+    {
+        std::cerr << "Shader program invalid in OpenGLRenderer!\n";
+        return;
+    }
+
+    // ------------------------------------------------
     // Create UBO
+    // ------------------------------------------------
     glGenBuffers(1, &lightUBO);
     glBindBuffer(GL_UNIFORM_BUFFER, lightUBO);
 
-    // Allocate enough memory
+    // Calculate required block size (std140 layout)
     size_t blockSize =
-        sizeof(int) * 4 +                 // 4 ints (std140 alignment)
-        sizeof(glm::vec4) * MAX_DIR_LIGHTS * 2; // directions + colors
+        sizeof(int) * 4 +                                   // 4 ints (aligned to 16 bytes)
+        sizeof(glm::vec4) * MAX_DIR_LIGHTS * 2 +            // dir directions + dir colors
+        sizeof(glm::vec4) * MAX_SPOT_LIGHTS * 4;            // spot pos + dir + color + params
+
+    // ------------------------------------------------
+    // Safety: Check against hardware limit
+    // ------------------------------------------------
+    GLint maxBlockSize = 0;
+    glGetIntegerv(GL_MAX_UNIFORM_BLOCK_SIZE, &maxBlockSize);
+
+    if (blockSize > static_cast<size_t>(maxBlockSize))
+    {
+        std::cerr << "Light UBO exceeds GL_MAX_UNIFORM_BLOCK_SIZE!\n";
+        std::cerr << "Requested: " << blockSize
+            << "  Max: " << maxBlockSize << "\n";
+    }
 
     glBufferData(GL_UNIFORM_BUFFER, blockSize, nullptr, GL_DYNAMIC_DRAW);
 
-    // Bind to binding point 0
+    // ------------------------------------------------
+    // Bind UBO to binding point 0
+    // ------------------------------------------------
     glBindBufferBase(GL_UNIFORM_BUFFER, 0, lightUBO);
 
-    // Connect shader block to binding point 0
+    // ------------------------------------------------
+    // Link shader block to binding point 0
+    // ------------------------------------------------
     GLuint blockIndex =
         glGetUniformBlockIndex(shader->GetProgram(), "LightBlock");
 
@@ -45,8 +74,8 @@ OpenGLRenderer::OpenGLRenderer() {
     }
 
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
-
 }
+
 
 void OpenGLRenderer::BeginFrame() {
 	glEnable(GL_DEPTH_TEST);
@@ -72,6 +101,11 @@ void OpenGLRenderer::Render(const Scene& scene, const Camera& cam)
 
         glm::vec4 dirDirections[MAX_DIR_LIGHTS];
         glm::vec4 dirColors[MAX_DIR_LIGHTS];
+
+        glm::vec4 spotPositions[MAX_SPOT_LIGHTS];
+        glm::vec4 spotDirections[MAX_SPOT_LIGHTS];
+        glm::vec4 spotColors[MAX_SPOT_LIGHTS];
+        glm::vec4 spotParams[MAX_SPOT_LIGHTS];
     };
 
     LightBlockCPU block{};
@@ -90,6 +124,36 @@ void OpenGLRenderer::Render(const Scene& scene, const Camera& cam)
 
         block.dirCount++;
     }
+
+    block.spotCount = 0;
+
+    for (const auto& [id, light] : scene.GetSpotLights())
+    {
+        if (!light.enabled) continue;
+        if (block.spotCount >= MAX_SPOT_LIGHTS) break;
+
+        int i = block.spotCount;
+
+        block.spotPositions[i] =
+            glm::vec4(light.position, 0.0f);
+
+        block.spotDirections[i] =
+            glm::vec4(glm::normalize(light.direction), 0.0f);
+
+        block.spotColors[i] =
+            glm::vec4(light.color * light.intensity, 0.0f);
+
+        block.spotParams[i] =
+            glm::vec4(
+                light.innerCutoff,
+                light.outerCutoff,
+                light.range,
+                0.0f
+            );
+
+        block.spotCount++;
+    }
+
 
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(LightBlockCPU), &block);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
