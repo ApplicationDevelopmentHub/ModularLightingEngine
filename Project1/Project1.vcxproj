@@ -150,6 +150,8 @@
     <ClInclude Include="OpenGLRenderer.h" />
     <ClInclude Include="Plane.h" />
     <ClInclude Include="PlaneInspectorAdapter.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="PointLightInspectorAdapter.h" />
     <ClInclude Include="Primitive.h" />
     <ClInclude Include="PrimitiveFactory.h" />
     <ClInclude Include="PrimitiveHandle.h" />
@@ -158,6 +160,8 @@
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="SphereInspectorAdapter.h" />
+    <ClInclude Include="SpotLight.h" />
+    <ClInclude Include="SpotLightInspectorAdapter.h" />
     <ClInclude Include="UIHierarchyPanel.h" />
     <ClInclude Include="UIInspectorPanel.h" />
     <ClInclude Include="UILatencyPanel.h" />
@@ -191,11 +195,13 @@
     <ClCompile Include="OpenGLRenderer.cpp" />
     <ClCompile Include="PlaneInspectorAdapter.cpp" />
     <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="PointLightInspectorAdapter.cpp" />
     <ClCompile Include="PrimitiveFactory.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="SphereInspectorAdapter.cpp" />
+    <ClCompile Include="SpotLightInspectorAdapter.cpp" />
     <ClCompile Include="UIHierarchyPanel.cpp" />
     <ClCompile Include="UIInspectorPanel.cpp" />
     <ClCompile Include="UILatencyPanel.cpp" />
@@ -205,7 +211,6 @@
   <ItemGroup>
     <None Include="pbr.frag" />
     <None Include="pbr.vert" />
-    <None Include="pbr1.vert" />
     <None Include="pbr2.frag" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

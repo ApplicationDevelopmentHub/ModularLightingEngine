@@ -174,6 +174,18 @@
     <ClInclude Include="DirectionalLightInspectorAdapter.h">
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClInclude>
+    <ClInclude Include="SpotLight.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotLightInspectorAdapter.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLightInspectorAdapter.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -281,15 +293,18 @@
     <ClCompile Include="DirectionalLightInspectorAdapter.cpp">
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClCompile>
+    <ClCompile Include="SpotLightInspectorAdapter.cpp">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLightInspectorAdapter.cpp">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="pbr.vert">
       <Filter>Source Files\ShaderPrograms</Filter>
     </None>
     <None Include="pbr.frag">
-      <Filter>Source Files\ShaderPrograms</Filter>
-    </None>
-    <None Include="pbr1.vert">
       <Filter>Source Files\ShaderPrograms</Filter>
     </None>
     <None Include="pbr2.frag">

@@ -78,6 +78,7 @@ bool Application::Init() {
 		CreateSphere(1.0f, 32, 64);
 		};
 
+	//Primitives
 	ctx.CreateBox = [this]() { //create box primitive
 		CreateBox(1.0f, 1.0f, 1.0f);
 		};
@@ -90,8 +91,17 @@ bool Application::Init() {
 		scene->RemovePrimitive(id);
 		};
 
+	//Lights
 	ctx.CreateDirectionalLight = [this]() { //create directional light
 		CreateDirectionalLight();
+		};
+
+	ctx.CreateSpotLight = [this]() { //create spot light
+		CreateSpotLight();
+		};
+
+	ctx.CreatePointLight = [this]() { //create spot light
+		CreatePointLight();
 		};
 
 	ctx.DeleteSelectedLight = [this](LightHandle id) {
@@ -188,6 +198,16 @@ LightHandle Application::CreateDirectionalLight()
 {
 	DirectionalLight light; // default values
 	return scene->AddDirectionalLight(light);
+}
+
+LightHandle Application::CreateSpotLight() {
+	SpotLight light;
+	return scene->AddSpotLight(light);
+}
+
+LightHandle Application::CreatePointLight() {
+	PointLight light;
+	return scene->AddpointLight(light);
 }
 
 //LATENCY

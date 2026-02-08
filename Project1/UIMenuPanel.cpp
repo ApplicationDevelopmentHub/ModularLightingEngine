@@ -41,19 +41,16 @@ void UIMenuPanel::Draw(Scene&, EditorContext& ctx) {
                 if (ctx.CreateDirectionalLight)
                     ctx.CreateDirectionalLight();
             }
-            ImGui::MenuItem("Point");
-            ImGui::MenuItem("Spot");
+            if (ImGui::MenuItem("Point")) {
+                if (ctx.CreatePointLight)
+                    ctx.CreatePointLight();
+            }
+            if(ImGui::MenuItem("Spot")) {
+                if (ctx.CreateSpotLight)
+                    ctx.CreateSpotLight();
+            }
             ImGui::EndMenu();
         }
-
-        /*if (ImGui::BeginMenu("Shadow")) {
-            int q = static_cast<int>(ctx.globalShadowQuality);
-            ImGui::Combo("Quality", &q,
-                "None\0Low\0Medium\0High\0");
-            ctx.globalShadowQuality =
-                static_cast<ShadowType>(q);
-            ImGui::EndMenu();
-        }*/
 
         ImGui::EndMainMenuBar();
     }

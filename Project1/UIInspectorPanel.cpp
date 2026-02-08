@@ -121,18 +121,7 @@ void UIInspectorPanel::Draw(Scene& scene, EditorContext& ctx)
             adapter->ApplyChanges();
         }
     }*/
-    //if (adapter->WantsDelete()) {
-    //    auto id = ctx.GetSelectedPrimitive();
-    //    if (id && ctx.DeleteSelectedPrimitive) {
-    //        ctx.DeleteSelectedPrimitive(*id);
-    //    }
-
-    //    ctx.ClearSelection();
-    //    adapter.reset();
-
-    //    ImGui::End();
-    //    return; // IMPORTANT: stop drawing this frame
-    //}
+    
     if (adapter->WantsDelete())
     {
         if (ctx.GetSelectionType() == EditorContext::SelectionType::Primitive)

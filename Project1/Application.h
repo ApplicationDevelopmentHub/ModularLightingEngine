@@ -42,11 +42,11 @@ public:
 
 	//Lighting system based calls
 	LightHandle CreateDirectionalLight();
+	LightHandle CreateSpotLight();
+	LightHandle CreatePointLight();
 	
 private:
 	~Application() = default; //default destructor compiler generated
-	//std::unique_ptr<LightingSystem> lightingSystem;
-	//std::unique_ptr<ShadowSystem> shadowSystem;
 
 	float ComputeDeltaTime();
 	double lastTime = 0.0f;
