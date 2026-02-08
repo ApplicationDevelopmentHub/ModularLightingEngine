@@ -100,6 +100,10 @@ bool Application::Init() {
 		CreateSpotLight();
 		};
 
+	ctx.CreatePointLight = [this]() { //create spot light
+		CreatePointLight();
+		};
+
 	ctx.DeleteSelectedLight = [this](LightHandle id) {
 		scene->RemoveLight(id);
 		};
@@ -199,6 +203,11 @@ LightHandle Application::CreateDirectionalLight()
 LightHandle Application::CreateSpotLight() {
 	SpotLight light;
 	return scene->AddSpotLight(light);
+}
+
+LightHandle Application::CreatePointLight() {
+	PointLight light;
+	return scene->AddpointLight(light);
 }
 
 //LATENCY

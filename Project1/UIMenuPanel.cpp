@@ -41,7 +41,10 @@ void UIMenuPanel::Draw(Scene&, EditorContext& ctx) {
                 if (ctx.CreateDirectionalLight)
                     ctx.CreateDirectionalLight();
             }
-            ImGui::MenuItem("Point");
+            if (ImGui::MenuItem("Point")) {
+                if (ctx.CreatePointLight)
+                    ctx.CreatePointLight();
+            }
             if(ImGui::MenuItem("Spot")) {
                 if (ctx.CreateSpotLight)
                     ctx.CreateSpotLight();

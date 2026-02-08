@@ -180,6 +180,12 @@
     <ClInclude Include="SpotLightInspectorAdapter.h">
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Source Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLightInspectorAdapter.h">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -288,6 +294,9 @@
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClCompile>
     <ClCompile Include="SpotLightInspectorAdapter.cpp">
+      <Filter>Source Files\InspectorBasedModification</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLightInspectorAdapter.cpp">
       <Filter>Source Files\InspectorBasedModification</Filter>
     </ClCompile>
   </ItemGroup>

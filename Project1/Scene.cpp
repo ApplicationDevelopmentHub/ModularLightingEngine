@@ -67,6 +67,24 @@ const std::unordered_map<LightHandle, SpotLight>& Scene::GetSpotLights() const {
 	return spotLights;
 }
 
+//Point light
+LightHandle Scene::AddpointLight(const PointLight& light) {
+	LightHandle id{ nextLightId.value++ };
+	pointLights[id] = light;
+	return id;
+}
+
+PointLight* Scene::GetPointLight(LightHandle id) {
+	auto it = pointLights.find(id);
+	if (it == pointLights.end())
+		return nullptr;
+
+	return &it->second;
+}
+
+const std::unordered_map<LightHandle, PointLight>& Scene::GetPointLights() const {
+	return pointLights;
+}
 
 //Remove any light by id
 void Scene::RemoveLight(LightHandle id)

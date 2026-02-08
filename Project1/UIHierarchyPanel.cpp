@@ -96,7 +96,7 @@ void UIHierarchyPanel::Draw(Scene& scene, EditorContext& ctx)
     }
 
     // -------- Point Lights --------
-    /*for (const auto& [id, light] : scene.GetPointLights()) {
+    for (const auto& [id, light] : scene.GetPointLights()) {
         hasLights = true;
 
         std::string label =
@@ -110,7 +110,7 @@ void UIHierarchyPanel::Draw(Scene& scene, EditorContext& ctx)
         if (ImGui::Selectable(label.c_str(), selected)) {
             ctx.SelectLight(id);
         }
-    }*/
+    }
 
     // -------- Spot Lights --------
     for (const auto& [id, light] : scene.GetSpotLights()) {

@@ -34,9 +34,11 @@ OpenGLRenderer::OpenGLRenderer()
 
     // Calculate required block size (std140 layout)
     size_t blockSize =
-        sizeof(int) * 4 +                                   // 4 ints (aligned to 16 bytes)
-        sizeof(glm::vec4) * MAX_DIR_LIGHTS * 2 +            // dir directions + dir colors
-        sizeof(glm::vec4) * MAX_SPOT_LIGHTS * 4;            // spot pos + dir + color + params
+        sizeof(int) * 4 +                                      // 4 ints (16 bytes aligned)
+        sizeof(glm::vec4) * MAX_DIR_LIGHTS * 2 +               // dirDirections + dirColors
+        sizeof(glm::vec4) * MAX_POINT_LIGHTS * 2 +             // pointPositions + pointColors
+        sizeof(glm::vec4) * MAX_SPOT_LIGHTS * 4;               // spotPos + spotDir + spotColor + spotParams
+
 
     // ------------------------------------------------
     // Safety: Check against hardware limit
@@ -106,6 +108,10 @@ void OpenGLRenderer::Render(const Scene& scene, const Camera& cam)
         glm::vec4 spotDirections[MAX_SPOT_LIGHTS];
         glm::vec4 spotColors[MAX_SPOT_LIGHTS];
         glm::vec4 spotParams[MAX_SPOT_LIGHTS];
+
+        glm::vec4 pointPositions[MAX_POINT_LIGHTS]; // xyz = position, w = range
+        glm::vec4 pointColors[MAX_POINT_LIGHTS];    // rgb = color * intensity, w = radius
+
     };
 
     LightBlockCPU block{};
@@ -153,6 +159,28 @@ void OpenGLRenderer::Render(const Scene& scene, const Camera& cam)
 
         block.spotCount++;
     }
+
+    // ------------------------------------------------
+    // Point Lights
+    // ------------------------------------------------
+    for (const auto& [id, light] : scene.GetPointLights())
+    {
+        if (!light.enabled) continue;
+        if (block.pointCount >= MAX_POINT_LIGHTS) break;
+
+        int i = block.pointCount;
+
+        block.pointPositions[i] =
+            glm::vec4(light.position, light.range);
+
+        block.pointColors[i] =
+            glm::vec4(
+                light.color * light.intensity,
+                light.radius);
+
+        block.pointCount++;
+    }
+
 
 
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(LightBlockCPU), &block);

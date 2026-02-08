@@ -1,4 +1,15 @@
-﻿  OpenGLRenderer.cpp
+﻿  Application.cpp
+C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\Application.cpp(87,26): warning C4244: 'argument': conversion from 'float' to 'uint32_t', possible loss of data
+  DirectionalLightInspectorAdapter.cpp
+  InspectorAdapterFactory.cpp
+  main.cpp
+  OpenGLRenderer.cpp
+  PointLightInspectorAdapter.cpp
   Scene.cpp
+  SpotLightInspectorAdapter.cpp
+  UIHierarchyPanel.cpp
+  UIInspectorPanel.cpp
+  UIMenuPanel.cpp
   Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Project1.vcxproj -> C:\Users\anupa\Desktop\Base\DevProjects\RenderingEngine\ModularLightingEngine\Project1\x64\Debug\Project1.exe

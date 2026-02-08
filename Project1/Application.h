@@ -43,6 +43,7 @@ public:
 	//Lighting system based calls
 	LightHandle CreateDirectionalLight();
 	LightHandle CreateSpotLight();
+	LightHandle CreatePointLight();
 	
 private:
 	~Application() = default; //default destructor compiler generated

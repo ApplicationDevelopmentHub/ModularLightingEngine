@@ -19,7 +19,7 @@
 
 // Lights
 #include "DirectionalLightInspectorAdapter.h"
-//#include "PointLightInspectorAdapter.h"
+#include "PointLightInspectorAdapter.h"
 #include "SpotLightInspectorAdapter.h"
 
 std::unique_ptr<IInspectorEditable>
@@ -67,6 +67,7 @@ InspectorAdapterFactory::Create(Scene& scene, EditorContext& ctx)
         if (!lightId)
             return nullptr;
 
+        //Directional lights
         if (scene.GetDirectionalLight(*lightId)) {
             return std::make_unique<DirectionalLightInspectorAdapter>(
                 scene,
@@ -74,8 +75,17 @@ InspectorAdapterFactory::Create(Scene& scene, EditorContext& ctx)
             );
         }
 
+        //Spot lights
         if (scene.GetSpotLight(*lightId)) {
             return std::make_unique<SpotLightInspectorAdapter>(
+                scene,
+                *lightId
+            );
+        }
+
+        //Point lights
+        if (scene.GetPointLight(*lightId)) {
+            return std::make_unique<PointLightInspectorAdapter>(
                 scene,
                 *lightId
             );

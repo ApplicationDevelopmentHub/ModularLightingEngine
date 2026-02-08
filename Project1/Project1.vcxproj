@@ -150,6 +150,8 @@
     <ClInclude Include="OpenGLRenderer.h" />
     <ClInclude Include="Plane.h" />
     <ClInclude Include="PlaneInspectorAdapter.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="PointLightInspectorAdapter.h" />
     <ClInclude Include="Primitive.h" />
     <ClInclude Include="PrimitiveFactory.h" />
     <ClInclude Include="PrimitiveHandle.h" />
@@ -193,6 +195,7 @@
     <ClCompile Include="OpenGLRenderer.cpp" />
     <ClCompile Include="PlaneInspectorAdapter.cpp" />
     <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="PointLightInspectorAdapter.cpp" />
     <ClCompile Include="PrimitiveFactory.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Shader.cpp" />

@@ -4,7 +4,7 @@
 // CONFIG
 // ==========================================================
 #define MAX_DIR_LIGHTS   10
-#define MAX_POINT_LIGHTS 32
+#define MAX_POINT_LIGHTS 10
 #define MAX_SPOT_LIGHTS  10
 
 out vec4 FragColor;
@@ -48,9 +48,8 @@ layout(std140) uniform LightBlock
     vec4 uSpotLightParams[MAX_SPOT_LIGHTS];      
 
     // ---- Reserved for future ----
-    // vec4 uPointLightPositions[MAX_POINT_LIGHTS];
-    // vec4 uPointLightColors[MAX_POINT_LIGHTS];
-    // vec4 uSpotLightData[MAX_SPOT_LIGHTS];
+    vec4 uPointLightPositions[MAX_POINT_LIGHTS]; // xyz = position, w = range
+    vec4 uPointLightColors[MAX_POINT_LIGHTS];    // rgb = color * intensity, w = radius
 };
 
 // ==========================================================
@@ -199,6 +198,57 @@ void main()
               attenuation *
               intensity;
     }
+
+    // ======================================================
+    // POINT LIGHTS
+    // ======================================================
+    for (int i = 0; i < uPointLightCount; ++i)
+    {
+        vec3 lightPos   = uPointLightPositions[i].xyz;
+        float range     = uPointLightPositions[i].w;
+
+        vec3 lightColor = uPointLightColors[i].xyz;
+        float radius    = uPointLightColors[i].w;
+
+        vec3 L = lightPos - vWorldPos;
+        float distance = length(L);
+
+        if (distance > range)
+            continue;
+
+        L = normalize(L);
+
+        // ---- Physically correct inverse-square attenuation ----
+        float attenuation = 1.0 / max(distance * distance, 0.01);
+
+        // Optional smooth range falloff (engine control)
+        float rangeFactor = clamp(1.0 - (distance / range), 0.0, 1.0);
+        attenuation *= rangeFactor * rangeFactor;
+
+        vec3 H = normalize(V + L);
+
+        float NDF = DistributionGGX(N, H, roughness);
+        float G   = GeometrySmith(N, V, L, roughness);
+        vec3  F   = FresnelSchlick(max(dot(H, V), 0.0), F0);
+
+        vec3 numerator = NDF * G * F;
+        float denom =
+            4.0 * max(dot(N, V), 0.0) *
+            max(dot(N, L), 0.0) + 0.001;
+
+        vec3 specular = numerator / denom;
+
+        vec3 kS = F;
+        vec3 kD = (vec3(1.0) - kS) * (1.0 - metallic);
+
+        float NdotL = max(dot(N, L), 0.0);
+
+        Lo += (kD * uAlbedo / PI + specular) *
+              lightColor *
+              NdotL *
+              attenuation;
+    }
+
 
     // ======================================================
     // AMBIENT
